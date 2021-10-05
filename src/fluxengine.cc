@@ -10,6 +10,8 @@ extern command_cb mainInspect;
 extern command_cb mainRawRead;
 extern command_cb mainRawWrite;
 extern command_cb mainRead;
+extern command_cb mainResetNormal;
+extern command_cb mainResetBootloader;
 extern command_cb mainRpm;
 extern command_cb mainSeek;
 extern command_cb mainTestBandwidth;
@@ -38,6 +40,7 @@ static std::vector<Command> commands =
     { "rpm",               mainRpm,               "Measures the disk rotational speed.", },
     { "seek",              mainSeek,              "Moves the disk head.", },
     { "test",              mainTest,              "Various testing commands.", },
+    { "reset",             mainReset,             "Reset remote device.", },
     { "upgradefluxfile",   mainUpgradeFluxFile,   "Upgrades a flux file from a previous version of this software.", },
 };
 
@@ -51,6 +54,12 @@ static std::vector<Command> testables =
 {
     { "bandwidth",     mainTestBandwidth, "Measures your USB bandwidth.", },
     { "voltages",      mainTestVoltages,  "Measures the FDD bus voltages.", },
+};
+
+static std::vector<Command> resetables =
+{
+    { "normal",     mainResetNormal, "Normal Reset of Remote Device.", },
+    { "bootloader",      mainResetBootloader,  "Reset Remote Device to Bootloader.", },
 };
 
 static void extendedHelp(std::vector<Command>& subcommands, const std::string& command)
@@ -89,6 +98,9 @@ static int mainAnalyse(int argc, const char* argv[])
 
 static int mainTest(int argc, const char* argv[])
 { return mainExtended(testables, "test", argc, argv); }
+
+static int mainReset(int argc, const char* argv[])
+{ return mainExtended(resetables, "reset", argc, argv); }
 
 static void globalHelp()
 {

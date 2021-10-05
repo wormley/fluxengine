@@ -1,0 +1,14 @@
+Last Modified Date & Time: 09/23/2021 18:59:19
+
+CE95391_PSoC5LP_USB_Bootloader: CE95391_PSoC5LP_USB_Bootloader.cydwr
+	cy_boot [v5.20] to [v6.10]
+	LIN_Dynamic [v3.20] to [v5.0]
+
+CE95391_PSoC5LP_USB_Bootloader: TopDesign.cysch
+	BL [v1.50] to [v1.60]
+	USBFS [v3.0] to [v3.20]
+
+
+Last Modified Date & Time: 09/23/2021 19:09:26
+
+

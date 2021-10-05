@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FluxEngine-000\FluxEngine\FluxEngine.cydwr\System">
+<ExpandedNodeIds>
+<v>FluxEngine-000</v>
+<v>FluxEngine-000\FluxEngine</v>
+<v>FluxEngine-000\FluxEngine\TopDesign</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Pins</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Analog</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Clocks</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Interrupts</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\DMA</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\System</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Directives</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Flash Security</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\EEPROM</v>
+<v>FluxEngine-000\FluxEngine\Header Files</v>
+<v>FluxEngine-000\FluxEngine\Header Files\cyapicallbacks.h</v>
+<v>FluxEngine-000\FluxEngine\Source Files</v>
+<v>FluxEngine-000\FluxEngine\Source Files\main.c</v>
+<v>FluxEngine-000\FluxEngine\Source Files\patcher.vbs</v>
+<v>FluxEngine-000\FluxEngine\Source Files\protocol.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FluxEngine-000</v>
+<v>FluxEngine-000\FluxEngine</v>
+<v>FluxEngine-000\FluxEngine\TopDesign</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Pins</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Analog</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Clocks</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Interrupts</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\DMA</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\System</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Directives</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\Flash Security</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.cydwr\EEPROM</v>
+<v>FluxEngine-000\FluxEngine\Header Files</v>
+<v>FluxEngine-000\FluxEngine\Header Files\cyapicallbacks.h</v>
+<v>FluxEngine-000\FluxEngine\Source Files</v>
+<v>FluxEngine-000\FluxEngine\Source Files\main.c</v>
+<v>FluxEngine-000\FluxEngine\Source Files\patcher.vbs</v>
+<v>FluxEngine-000\FluxEngine\Source Files\protocol.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\CounterClock</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\cmsis_compiler.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>FluxEngine-000\FluxEngine\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FluxEngine-000</v>
+<v>FluxEngine-000\FluxEngine</v>
+<v>FluxEngine-000\FluxEngine\FIFOin</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\API</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\API\c.c</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\API\h.h</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\FIFOin.cydmacap</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\FIFOin.cysym</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\FIFOin.pdf</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\FIFOin.v</v>
+<v>FluxEngine-000\FluxEngine\FIFOout</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\API</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\API\c.c</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\API\h.h</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\FIFOout.cydmacap</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\FIFOout.cysym</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\FIFOout.v</v>
+<v>FluxEngine-000\FluxEngine\PulseGen</v>
+<v>FluxEngine-000\FluxEngine\PulseGen\PulseGen.cysym</v>
+<v>FluxEngine-000\FluxEngine\PulseGen\PulseGen.cyudb</v>
+<v>FluxEngine-000\FluxEngine\Sampler</v>
+<v>FluxEngine-000\FluxEngine\Sampler\Sampler.cysym</v>
+<v>FluxEngine-000\FluxEngine\Sampler\Sampler.v</v>
+<v>FluxEngine-000\FluxEngine\Sequencer</v>
+<v>FluxEngine-000\FluxEngine\Sequencer\Sequencer.cysym</v>
+<v>FluxEngine-000\FluxEngine\Sequencer\Sequencer.v</v>
+<v>FluxEngine-000\FluxEngine\SuperCounter</v>
+<v>FluxEngine-000\FluxEngine\SuperCounter\SuperCounter.cysym</v>
+<v>FluxEngine-000\FluxEngine\SuperCounter\SuperCounter.v</v>
+<v>FluxEngine-000\FluxEngine\TopDesign</v>
+<v>FluxEngine-000\FluxEngine\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FluxEngine-000</v>
+<v>FluxEngine-000\FluxEngine</v>
+<v>FluxEngine-000\FluxEngine\FIFOin</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\API</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\API\c.c</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\API\h.h</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\FIFOin.cydmacap</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\FIFOin.cysym</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\FIFOin.pdf</v>
+<v>FluxEngine-000\FluxEngine\FIFOin\FIFOin.v</v>
+<v>FluxEngine-000\FluxEngine\FIFOout</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\API</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\API\c.c</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\API\h.h</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\FIFOout.cydmacap</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\FIFOout.cysym</v>
+<v>FluxEngine-000\FluxEngine\FIFOout\FIFOout.v</v>
+<v>FluxEngine-000\FluxEngine\PulseGen</v>
+<v>FluxEngine-000\FluxEngine\PulseGen\PulseGen.cysym</v>
+<v>FluxEngine-000\FluxEngine\PulseGen\PulseGen.cyudb</v>
+<v>FluxEngine-000\FluxEngine\Sampler</v>
+<v>FluxEngine-000\FluxEngine\Sampler\Sampler.cysym</v>
+<v>FluxEngine-000\FluxEngine\Sampler\Sampler.v</v>
+<v>FluxEngine-000\FluxEngine\Sequencer</v>
+<v>FluxEngine-000\FluxEngine\Sequencer\Sequencer.cysym</v>
+<v>FluxEngine-000\FluxEngine\Sequencer\Sequencer.v</v>
+<v>FluxEngine-000\FluxEngine\SuperCounter</v>
+<v>FluxEngine-000\FluxEngine\SuperCounter\SuperCounter.cysym</v>
+<v>FluxEngine-000\FluxEngine\SuperCounter\SuperCounter.v</v>
+<v>FluxEngine-000\FluxEngine\TopDesign</v>
+<v>FluxEngine-000\FluxEngine\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FluxEngine-000</v>
+<v>FluxEngine-000\FluxEngine</v>
+<v>FluxEngine-000\FluxEngine\CortexM3</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541\Release</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541\Release\FluxEngine.elf</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541\Release\FluxEngine.hex</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541\Release\FluxEngine.map</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.gpdsc</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.rpt</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FluxEngine-000</v>
+<v>FluxEngine-000\FluxEngine</v>
+<v>FluxEngine-000\FluxEngine\CortexM3</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541\Release</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541\Release\FluxEngine.elf</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541\Release\FluxEngine.hex</v>
+<v>FluxEngine-000\FluxEngine\CortexM3\ARM_GCC_541\Release\FluxEngine.map</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.gpdsc</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine.rpt</v>
+<v>FluxEngine-000\FluxEngine\FluxEngine_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FluxEngine-000</v>
+<v>FluxEngine-000\FluxEngine</v>
+<v>FluxEngine-000\FluxEngine\PSoC 5LP Architecture TRM</v>
+<v>FluxEngine-000\FluxEngine\CY8C58LP Family Datasheet</v>
+<v>FluxEngine-000\FluxEngine\System Reference Guides</v>
+<v>FluxEngine-000\FluxEngine\System Reference Guides\cy_boot_v6_10</v>
+<v>FluxEngine-000\FluxEngine\ADC_SAR_v3_10</v>
+<v>FluxEngine-000\FluxEngine\ADC_SAR_v3_10\ADC_SAR_v3_10.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_clock_v2_20</v>
+<v>FluxEngine-000\FluxEngine\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_constant_v1_0</v>
+<v>FluxEngine-000\FluxEngine\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_dma_v1_70</v>
+<v>FluxEngine-000\FluxEngine\cy_dma_v1_70\cy_dma_v1_70.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_pins_v2_20</v>
+<v>FluxEngine-000\FluxEngine\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_sync_v1_0.pdf</v>
+<v>FluxEngine-000\FluxEngine\CyControlReg_v1_80</v>
+<v>FluxEngine-000\FluxEngine\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>FluxEngine-000\FluxEngine\CyStatusReg_v1_90</v>
+<v>FluxEngine-000\FluxEngine\CyStatusReg_v1_90\CyStatusReg_v1_90.pdf</v>
+<v>FluxEngine-000\FluxEngine\DigitalComp_v1_0.pdf</v>
+<v>FluxEngine-000\FluxEngine\FIFOin.pdf</v>
+<v>FluxEngine-000\FluxEngine\LUT_v1_60.pdf</v>
+<v>FluxEngine-000\FluxEngine\mux_v1_10.pdf</v>
+<v>FluxEngine-000\FluxEngine\not_v1_0</v>
+<v>FluxEngine-000\FluxEngine\not_v1_0\not_v1_0.pdf</v>
+<v>FluxEngine-000\FluxEngine\SW_Tx_UART_v1_50.pdf</v>
+<v>FluxEngine-000\FluxEngine\USBFS_v3_20.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FluxEngine-000</v>
+<v>FluxEngine-000\FluxEngine</v>
+<v>FluxEngine-000\FluxEngine\PSoC 5LP Architecture TRM</v>
+<v>FluxEngine-000\FluxEngine\CY8C58LP Family Datasheet</v>
+<v>FluxEngine-000\FluxEngine\System Reference Guides</v>
+<v>FluxEngine-000\FluxEngine\System Reference Guides\cy_boot_v6_10</v>
+<v>FluxEngine-000\FluxEngine\ADC_SAR_v3_10</v>
+<v>FluxEngine-000\FluxEngine\ADC_SAR_v3_10\ADC_SAR_v3_10.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_clock_v2_20</v>
+<v>FluxEngine-000\FluxEngine\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_constant_v1_0</v>
+<v>FluxEngine-000\FluxEngine\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_dma_v1_70</v>
+<v>FluxEngine-000\FluxEngine\cy_dma_v1_70\cy_dma_v1_70.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_pins_v2_20</v>
+<v>FluxEngine-000\FluxEngine\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>FluxEngine-000\FluxEngine\cy_sync_v1_0.pdf</v>
+<v>FluxEngine-000\FluxEngine\CyControlReg_v1_80</v>
+<v>FluxEngine-000\FluxEngine\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>FluxEngine-000\FluxEngine\CyStatusReg_v1_90</v>
+<v>FluxEngine-000\FluxEngine\CyStatusReg_v1_90\CyStatusReg_v1_90.pdf</v>
+<v>FluxEngine-000\FluxEngine\DigitalComp_v1_0.pdf</v>
+<v>FluxEngine-000\FluxEngine\FIFOin.pdf</v>
+<v>FluxEngine-000\FluxEngine\LUT_v1_60.pdf</v>
+<v>FluxEngine-000\FluxEngine\mux_v1_10.pdf</v>
+<v>FluxEngine-000\FluxEngine\not_v1_0</v>
+<v>FluxEngine-000\FluxEngine\not_v1_0\not_v1_0.pdf</v>
+<v>FluxEngine-000\FluxEngine\SW_Tx_UART_v1_50.pdf</v>
+<v>FluxEngine-000\FluxEngine\USBFS_v3_20.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\main.c" />
+<name v=".\TopDesign\TopDesign.cysch" />
+<name v="..\protocol.h" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1313, 620" SelectedTabbedMdiWindow="32c4d43c-3593-4302-95ee-cf4a588cb827"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="18c6f3c5-7d9e-43d7-a07a-99212f492acd" /><DocumentWindow Key="\\sauron\wormley\shared\git\local\fluxengine\FluxEngine.cydsn\main.c" Guid="32c4d43c-3593-4302-95ee-cf4a588cb827" /><DocumentWindow Key="\\sauron\wormley\shared\git\local\fluxengine\FluxEngine.cydsn\TopDesign\TopDesign.cysch" Guid="ba564159-8d89-4ead-bbc8-ea0000e08596" /><DocumentWindow Key="\\sauron\wormley\shared\git\local\fluxengine\protocol.h" Guid="f6a5486a-f6c9-4192-bff8-be7bb0143644" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

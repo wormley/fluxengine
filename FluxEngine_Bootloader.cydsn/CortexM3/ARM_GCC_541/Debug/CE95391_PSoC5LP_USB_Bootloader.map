@@ -1,0 +1,1471 @@
+Archive member included to satisfy reference by file (symbol)
+
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (Wait_Forever_Read)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (CyBtldr_CheckLaunch)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o) (USBFS_CyBtldrCommStart)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o) (CySetTemp)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (CyHalt)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o) (CyPmReadStatus)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o) (CySpcStart)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+                              .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o (CyDelayCycles)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o) (USBFS_Start)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o) (USBFS_lastPacketSize)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o) (USBFS_EP_1_ISR)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o) (USBFS_hidProtocol)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o) (USBFS_DP_ISR)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o) (USBFS_ConfigReg)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o) (USBFS_HandleVendorRqst)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o) (USBFS_Dp_ClearInterrupt)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o) (USBFS_DispatchClassRqst)
+.\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+                              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o) (USBFS_MSOS_CONFIGURATION_DESCR)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                              .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o (memcpy)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+USBFS_deviceAddress
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_ep0Mode       0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_interfaceSetting
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+USBFS_hidIdleRate   0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+USBFS_currentTD     0xc               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_device        0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_interfaceNumber
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_ep0Toggle     0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_deviceStatus  0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF
+                    0x41              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+USBFS_configurationChanged
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_configuration
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_transferState
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_interfaceStatus
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_interfaceClass
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_EP            0x6c              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF
+                    0x41              .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+USBFS_hidIdleTimer  0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+USBFS_lastPacketSize
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_hidProtocol   0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_SCB
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+dieTemperature      0x2               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+USBFS_ep0Count      0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_interfaceSettingLast
+                    0x1               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+USBFS_transferByteCount
+                    0x2               .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .text          0x00000000       0x74 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.SetAnalogRoutingPumps
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .data          0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text._exit    0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .text.Wait_Forever_Write
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .text.Wait_Forever_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .text.Wait_Forever_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_InitCallback
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_SetFlashByte
+                0x00000000       0x44 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_Exit  0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyFlash_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyFlash_EraseRow
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CySetFlashEEBuffer
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyWriteRowData
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyFlash_SetWaitCycles
+                0x00000000       0x7c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyEEPROM_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyEEPROM_ReadReserve
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyEEPROM_ReadRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .bss           0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyUSB_PowerOnCheck
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyBusClk_Internal_SetDivider
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyPLL_OUT_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIMO_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIMO_EnableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIMO_DisableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyMasterClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyMasterClk_SetDivider
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyBusClk_SetDivider
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyUsbClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyILO_Start1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyILO_Stop1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyILO_Start100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyILO_Stop100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyPLL_OUT_Start
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIMO_Start
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyILO_Enable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyILO_Disable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyILO_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyILO_SetPowerMode
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Stop
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_Start
+                0x00000000       0xac .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_EnableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_DisableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_ReadStatus
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_EnableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_DisableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_SetStartup
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_SetFbVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_SetWdVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyPLL_OUT_SetPQ
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyPLL_OUT_SetSource
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x00000000       0xcc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIMO_SetFreq
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIMO_SetSource
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x00000000       0x84 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Start
+                0x00000000       0x74 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyWdtStart
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyWdtClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyVdStickyStatus
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyVdLvDigitEnable
+                0x00000000       0x84 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyVdLvAnalogEnable
+                0x00000000       0x80 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyVdLvDigitDisable
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyVdLvAnalogDisable
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyVdHvAnalogEnable
+                0x00000000       0x54 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyVdHvAnalogDisable
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyVdRealTimeStatus
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickGetClockSource
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .bss           0x00000000       0x43 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmHibSlpSaveSet
+                0x00000000      0x1dc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x00000000       0xd8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmHviLviSaveDisable
+                0x00000000       0xa0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmHibSaveSet
+                0x00000000       0x98 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmHviLviRestore
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmHibRestore
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmSaveClocks
+                0x00000000      0x218 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmRestoreClocks
+                0x00000000      0x24c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmAltAct
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmSleep
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmHibernateEx
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmHibernate
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmReadStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmCtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmOppsSet
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text.CyPmFtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .rodata        0x00000000        0xf .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .text.CySpcStop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .text.CySpcLoadMultiByte
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .text.CySpcLoadRow
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .text.CySpcEraseSector
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .text.CySpcEraseRow
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_CheckActivity
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_GetInterfaceSetting
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_DisableOutEP
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_Force
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_GetEPAckState
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_SetPowerStatus
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_RWUEnabled
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_GetDeviceAddress
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_EnableSofInt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text.USBFS_DisableSofInt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .text.USBFS_UpdateHIDTimer
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .text.USBFS_GetProtocol
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .bss           0x00000000        0x2 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .text.USBFS_SaveConfig
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .text.USBFS_RestoreConfig
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .text.USBFS_Suspend
+                0x00000000       0xc8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .text.USBFS_Resume
+                0x00000000       0xbc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .text.USBFS_EpStateInit
+                0x00000000       0x44 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .text.USBFS_TerminateEP
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .text.USBFS_Dp_Write
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .text.USBFS_Dp_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .text.USBFS_Dp_Read
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .text.USBFS_Dp_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .text.USBFS_Dp_SetInterruptMode
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+START GROUP
+LOAD .\CortexM3\ARM_GCC_541\Debug\main.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000020                CY_ECC_ROW_SIZE = 0x20
+                0x00000000                CY_EE_IN_BTLDR = 0x0
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000800                CY_EE_SIZE = 0x800
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                [!provide]                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + LENGTH (ram)))
+                [!provide]                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((LENGTH (rom) - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                ecc_offset = ((appl_start / CY_FLASH_ROW_SIZE) * CY_ECC_ROW_SIZE)
+                0x00000000                ee_offset = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?((CY_EE_SIZE / CY_APPL_MAX) * (CY_APPL_NUM - 0x1)):0x0
+                0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
+                [!provide]                PROVIDE (CY_ECC_OFFSET, ecc_offset)
+
+.text           0x00000000     0x2855
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010       0x1c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((appl_start + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x0000002c       0x5c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .text.main     0x00000088       0x24 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000088                main
+ .text.CyClockStartupError
+                0x000000ac        0x4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.cfg_write_bytes32
+                0x000000b0       0x34 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.AnalogSetDefault
+                0x000000e4       0x28 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYMEMZERO
+                0x0000010c        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYCONFIGCPYCODE
+                0x00000118        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYCONFIGCPY
+                0x00000120        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.ClockSetup
+                0x00000128       0xbc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.cyfitter_cfg
+                0x000001e4       0xc0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000001e4                cyfitter_cfg
+ .text.IntDefaultHandler
+                0x000002a4       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000002a4                IntDefaultHandler
+ .text.Start_c  0x000002b4       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000002b4                Start_c
+ .text.initialize_psoc
+                0x00000300       0x68 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000300                initialize_psoc
+ .text.Wait_Forever_Read
+                0x00000368       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+                0x00000368                Wait_Forever_Read
+ .text.BL_CalcPacketChecksum
+                0x00000378       0x1c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_VerifyRow
+                0x00000394       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_LaunchBootloadable
+                0x000003b8        0x4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_LaunchApplication
+                0x000003bc       0x14 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_WritePacket
+                0x000003d0       0x54 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_Calc8BitSum
+                0x00000424       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                0x00000424                BL_Calc8BitSum
+ .text.BL_GetMetadata
+                0x00000454      0x12c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                0x00000454                BL_GetMetadata
+ .text.CyBtldr_CheckLaunch
+                0x00000580       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                0x00000580                CyBtldr_CheckLaunch
+ .text.BL_ValidateBootloadable
+                0x000005b0       0x94 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                0x000005b0                BL_ValidateBootloadable
+ .text.BL_HostLink
+                0x00000644      0x574 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .text.BL_Start
+                0x00000bb8       0x68 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                0x00000bb8                BL_Start
+ .text.USBFS_CyBtldrCommStart
+                0x00000c20       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+                0x00000c20                USBFS_CyBtldrCommStart
+ .text.USBFS_CyBtldrCommStop
+                0x00000c38        0x8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+                0x00000c38                USBFS_CyBtldrCommStop
+ .text.USBFS_CyBtldrCommReset
+                0x00000c40        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+                0x00000c40                USBFS_CyBtldrCommReset
+ .text.USBFS_CyBtldrCommWrite
+                0x00000c4c       0x44 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+                0x00000c4c                USBFS_CyBtldrCommWrite
+ .text.USBFS_CyBtldrCommRead
+                0x00000c90       0xa0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+                0x00000c90                USBFS_CyBtldrCommRead
+ .text.CySetTempInt
+                0x00000d30       0x60 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .text.CyFlashGetSpcAlgorithm
+                0x00000d90       0x4c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+                0x00000d90                CyFlashGetSpcAlgorithm
+ .text.CySetTemp
+                0x00000ddc       0x14 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+                0x00000ddc                CySetTemp
+ .text.CyWriteRowFull
+                0x00000df0       0xf8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+                0x00000df0                CyWriteRowFull
+ .text.CyEEPROM_Start
+                0x00000ee8       0x54 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+                0x00000ee8                CyEEPROM_Start
+ .text.CyHalt   0x00000f3c        0x4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x00000f3c                CyHalt
+ .text.CySoftwareReset
+                0x00000f40       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x00000f40                CySoftwareReset
+ .text.CyDelay  0x00000f50       0x2c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x00000f50                CyDelay
+ .text.CyDelayUs
+                0x00000f7c       0x14 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x00000f7c                CyDelayUs
+ .text.CyFlushCache
+                0x00000f90       0x44 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x00000f90                CyFlushCache
+ .text.CyIntSetVector
+                0x00000fd4       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x00000fd4                CyIntSetVector
+ .text.CyIntSetPriority
+                0x00000ffc       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x00000ffc                CyIntSetPriority
+ .text.CySpcStart
+                0x0000102c       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x0000102c                CySpcStart
+ .text.CySpcReadData
+                0x00001050       0x34 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x00001050                CySpcReadData
+ .text.CySpcLoadRowFull
+                0x00001084       0x80 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x00001084                CySpcLoadRowFull
+ .text.CySpcWriteRow
+                0x00001104       0x4c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x00001104                CySpcWriteRow
+ .text.CySpcGetTemp
+                0x00001150       0x3c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x00001150                CySpcGetTemp
+ .text.CySpcLock
+                0x0000118c       0x4c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x0000118c                CySpcLock
+ .text.CySpcUnlock
+                0x000011d8       0x38 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x000011d8                CySpcUnlock
+ .text.CySpcGetAlgorithm
+                0x00001210       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x00001210                CySpcGetAlgorithm
+ .text          0x00001238       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+                0x00001238                CyDelayCycles
+                0x00001248                CyEnterCriticalSection
+                0x00001250                CyExitCriticalSection
+ .text.USBFS_Init
+                0x00001258      0x12c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x00001258                USBFS_Init
+ .text.USBFS_InitComponent
+                0x00001384       0xcc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x00001384                USBFS_InitComponent
+ .text.USBFS_Start
+                0x00001450       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x00001450                USBFS_Start
+ .text.USBFS_ReInitComponent
+                0x00001474       0x64 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x00001474                USBFS_ReInitComponent
+ .text.USBFS_Stop
+                0x000014d8       0xb4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x000014d8                USBFS_Stop
+ .text.USBFS_GetConfiguration
+                0x0000158c        0xc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x0000158c                USBFS_GetConfiguration
+ .text.USBFS_IsConfigurationChanged
+                0x00001598       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x00001598                USBFS_IsConfigurationChanged
+ .text.USBFS_GetEPState
+                0x000015b8       0x14 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x000015b8                USBFS_GetEPState
+ .text.USBFS_GetEPCount
+                0x000015cc       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x000015cc                USBFS_GetEPCount
+ .text.USBFS_LoadInEP
+                0x000015f4       0x94 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x000015f4                USBFS_LoadInEP
+ .text.USBFS_EnableOutEP
+                0x00001688       0x2c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x00001688                USBFS_EnableOutEP
+ .text.USBFS_ReadOutEP
+                0x000016b4       0x50 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x000016b4                USBFS_ReadOutEP
+ .text.USBFS_LoadEP0
+                0x00001704       0x98 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001704                USBFS_LoadEP0
+ .text.USBFS_InitZeroLengthControlTransfer
+                0x0000179c       0x34 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x0000179c                USBFS_InitZeroLengthControlTransfer
+ .text.USBFS_ControlReadDataStage
+                0x000017d0        0x8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x000017d0                USBFS_ControlReadDataStage
+ .text.USBFS_ControlWriteDataStage
+                0x000017d8       0x84 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x000017d8                USBFS_ControlWriteDataStage
+ .text.USBFS_InitNoDataControlTransfer
+                0x0000185c       0x2c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x0000185c                USBFS_InitNoDataControlTransfer
+ .text.USBFS_UpdateStatusBlock
+                0x00001888       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001888                USBFS_UpdateStatusBlock
+ .text.USBFS_HandleSetup
+                0x000018ac       0x5c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x000018ac                USBFS_HandleSetup
+ .text.USBFS_ControlReadStatusStage
+                0x00001908       0x38 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001908                USBFS_ControlReadStatusStage
+ .text.USBFS_HandleOUT
+                0x00001940       0x38 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001940                USBFS_HandleOUT
+ .text.USBFS_ControlWriteStatusStage
+                0x00001978       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001978                USBFS_ControlWriteStatusStage
+ .text.USBFS_NoDataControlStatusStage
+                0x00001998       0x40 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001998                USBFS_NoDataControlStatusStage
+ .text.USBFS_HandleIN
+                0x000019d8       0x2c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x000019d8                USBFS_HandleIN
+ .text.USBFS_EP_0_ISR
+                0x00001a04       0xb8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001a04                USBFS_EP_0_ISR
+ .text.USBFS_InitializeStatusBlock
+                0x00001abc       0x24 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001abc                USBFS_InitializeStatusBlock
+ .text.USBFS_InitControlRead
+                0x00001ae0       0x50 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001ae0                USBFS_InitControlRead
+ .text.USBFS_InitControlWrite
+                0x00001b30       0x48 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x00001b30                USBFS_InitControlWrite
+ .text.USBFS_EP_1_ISR
+                0x00001b78       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+                0x00001b78                USBFS_EP_1_ISR
+ .text.USBFS_EP_2_ISR
+                0x00001ba8       0x34 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+                0x00001ba8                USBFS_EP_2_ISR
+ .text.USBFS_SOF_ISR
+                0x00001bdc        0x4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+                0x00001bdc                USBFS_SOF_ISR
+ .text.USBFS_BUS_RESET_ISR
+                0x00001be0        0x8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+                0x00001be0                USBFS_BUS_RESET_ISR
+ .text.USBFS_FindHidClassDecriptor
+                0x00001be8       0x44 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+                0x00001be8                USBFS_FindHidClassDecriptor
+ .text.USBFS_FindReportDescriptor
+                0x00001c2c       0x4c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+                0x00001c2c                USBFS_FindReportDescriptor
+ .text.USBFS_FindReport
+                0x00001c78       0x7c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+                0x00001c78                USBFS_FindReport
+ .text.USBFS_DispatchHIDClassRqst
+                0x00001cf4      0x184 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+                0x00001cf4                USBFS_DispatchHIDClassRqst
+ .text.USBFS_DP_ISR
+                0x00001e78        0x8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+                0x00001e78                USBFS_DP_ISR
+ .text.USBFS_ConfigReg
+                0x00001e80       0xa4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x00001e80                USBFS_ConfigReg
+ .text.USBFS_GetConfigTablePtr
+                0x00001f24       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x00001f24                USBFS_GetConfigTablePtr
+ .text.USBFS_ConfigAltChanged
+                0x00001f4c      0x11c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x00001f4c                USBFS_ConfigAltChanged
+ .text.USBFS_GetDeviceTablePtr
+                0x00002068       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x00002068                USBFS_GetDeviceTablePtr
+ .text.USBFS_GetInterfaceClassTablePtr
+                0x00002080       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x00002080                USBFS_GetInterfaceClassTablePtr
+ .text.USBFS_Config
+                0x000020a8      0x1cc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x000020a8                USBFS_Config
+ .text.USBFS_SetEndpointHalt
+                0x00002274       0x64 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x00002274                USBFS_SetEndpointHalt
+ .text.USBFS_ClearEndpointHalt
+                0x000022d8       0xac .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x000022d8                USBFS_ClearEndpointHalt
+ .text.USBFS_ValidateAlternateSetting
+                0x00002384       0x4c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x00002384                USBFS_ValidateAlternateSetting
+ .text.USBFS_HandleStandardRqst
+                0x000023d0      0x354 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                0x000023d0                USBFS_HandleStandardRqst
+ .text.USBFS_HandleVendorRqst
+                0x00002724       0x3c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+                0x00002724                USBFS_HandleVendorRqst
+ .text.USBFS_Dp_ClearInterrupt
+                0x00002760       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+                0x00002760                USBFS_Dp_ClearInterrupt
+ .text.USBFS_DispatchClassRqst
+                0x00002770       0x60 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+                0x00002770                USBFS_DispatchClassRqst
+ .text.__errno  0x000027d0        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x000027d0                __errno
+ .text.__libc_init_array
+                0x000027dc       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x000027dc                __libc_init_array
+ .text.memcpy   0x00002828       0x16 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00002828                memcpy
+ .text.memset   0x0000283e       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x0000283e                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x0000284e        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000284e        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x0000284e        0x0 linker stubs
+ *(.bootloader)
+ *fill*         0x0000284e        0x2 
+ .bootloader    0x00002850        0x5 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                0x00002850                BL_SizeBytes
+                0x00002854                BL_Checksum
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00002858        0x0
+ .v4_bx         0x00002858        0x0 linker stubs
+
+.iplt           0x00002858        0x0
+ .iplt          0x00002858        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00002858        0x4
+ *(.eh_frame)
+ .eh_frame      0x00002858        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x00002858        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000285c                __exidx_end = .
+
+.rodata         0x0000285c      0x2f4
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000285c      0x116 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ *fill*         0x00002972        0x2 
+ .rodata        0x00002974        0x8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .rodata        0x0000297c      0x19e .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+                0x0000297c                USBFS_MSOS_CONFIGURATION_DESCR
+                0x000029a4                USBFS_MSOS_DESCRIPTOR
+                0x000029b8                USBFS_TABLE
+                0x000029c0                USBFS_DEVICE0_TABLE
+                0x000029d8                USBFS_DEVICE0_CONFIGURATION0_TABLE
+                0x000029f8                USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+                0x000029fc                USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+                0x00002a0c                USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE
+                0x00002a14                USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE
+                0x00002a3c                USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE
+                0x00002a48                USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE
+                0x00002a54                USBFS_HIDREPORT_DESCRIPTOR1
+                0x00002a7c                USBFS_SN_STRING_DESCRIPTOR
+                0x00002a88                USBFS_STRING_DESCRIPTORS
+                0x00002adc                USBFS_DEVICE0_CONFIGURATION0_DESCR
+                0x00002b08                USBFS_DEVICE0_DESCR
+ .rodata.str1.1
+                0x00002b1a        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00002b1c                . = ALIGN (0x4)
+ *(.init)
+ .init          0x00002b1c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00002b1c                _init
+ .init          0x00002b20        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00002b28                . = ALIGN (0x4)
+                0x00002b28                __preinit_array_start = .
+ *(.preinit_array)
+                0x00002b28                __preinit_array_end = .
+                0x00002b28                . = ALIGN (0x4)
+                0x00002b28                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00002b28        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x00002b2c        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00002b30                __init_array_end = .
+                0x00002b30                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00002b30        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00002b30                _fini
+ .fini          0x00002b34        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00002b3c                . = ALIGN (0x4)
+                0x00002b3c                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00002b3c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00002b40                __fini_array_end = .
+                0x00002b40                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00002b40                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00002b40                . = ALIGN (0x4)
+                0x00002b40                __cy_regions = .
+                0x00002b40        0x4 LONG 0x2b50 __cy_region_init_ram
+                0x00002b44        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x00002b48        0x4 LONG 0x80 __cy_region_init_size_ram
+                0x00002b4c        0x4 LONG 0x170 __cy_region_zero_size_ram
+                0x00002b50                __cy_regions_end = .
+                0x00002b50                . = ALIGN (0x8)
+                0x00002b50                _etext = .
+
+.cy_checksum_exclude
+                0x00002b50        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x1fff8000       0xc0
+                0x1fff8000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x1fff8000       0xc0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x1fff8000                CyRamVectors
+
+.noinit         0x1fff80c0        0x1
+ *(.noinit)
+ .noinit        0x1fff80c0        0x1 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x1fff80c0                CyResetStatus
+
+.data           0x1fff80c8       0x80 load address 0x00002b50
+                0x1fff80c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .jcr           0x1fff80c8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff80cc        0x8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                0x1fff80cc                BL_SizeBytesAccess
+                0x1fff80d0                BL_ChecksumAccess
+ .data          0x1fff80d4       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                0x1fff80d4                cydelay_32k_ms
+                0x1fff80d8                cydelay_freq_khz
+                0x1fff80dc                cydelay_freq_mhz
+                0x1fff80e0                cydelay_freq_hz
+ .data.impure_data
+                0x1fff80e4       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x1fff8144        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x1fff8144                _impure_ptr
+                0x1fff8148                . = ALIGN (0x8)
+ *(.ram)
+                0x1fff8148                _edata = .
+
+.igot.plt       0x1fff8148        0x0 load address 0x00002bd0
+ .igot.plt      0x1fff8148        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.bss            0x1fff8148      0x170 load address 0x00002bd0
+                0x1fff8148                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff8148       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .bss           0x1fff8164        0x4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .bss           0x1fff8168        0x1 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ *fill*         0x1fff8169        0x3 
+ .bss           0x1fff816c        0x8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                0x1fff816c                SpcLockState
+ .bss           0x1fff8174        0x1 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                0x1fff8174                USBFS_initVar
+ *fill*         0x1fff8175        0x3 
+ .bss           0x1fff8178        0x2 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ *(COMMON)
+ *fill*         0x1fff817a        0x2 
+ COMMON         0x1fff817c        0x2 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+                0x1fff817c                dieTemperature
+ *fill*         0x1fff817e        0x2 
+ COMMON         0x1fff8180       0x98 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                0x1fff8180                USBFS_deviceAddress
+                0x1fff8181                USBFS_ep0Mode
+                0x1fff8184                USBFS_interfaceSetting
+                0x1fff8188                USBFS_currentTD
+                0x1fff8194                USBFS_device
+                0x1fff8195                USBFS_interfaceNumber
+                0x1fff8196                USBFS_ep0Toggle
+                0x1fff8197                USBFS_deviceStatus
+                0x1fff8198                USBFS_configurationChanged
+                0x1fff8199                USBFS_configuration
+                0x1fff819a                USBFS_transferState
+                0x1fff819c                USBFS_interfaceStatus
+                0x1fff81a0                USBFS_interfaceClass
+                0x1fff81a4                USBFS_EP
+                0x1fff8210                USBFS_lastPacketSize
+                0x1fff8211                USBFS_ep0Count
+                0x1fff8214                USBFS_interfaceSettingLast
+                0x1fff8216                USBFS_transferByteCount
+ COMMON         0x1fff8218        0x9 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+                0x1fff8218                USBFS_hidIdleRate
+                0x1fff821c                USBFS_hidIdleTimer
+                0x1fff8220                USBFS_hidProtocol
+ *fill*         0x1fff8221        0x3 
+ COMMON         0x1fff8224       0x90 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+                0x1fff8224                USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB
+                0x1fff8228                USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF
+                0x1fff826c                USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF
+                0x1fff82b0                USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_SCB
+                0x1fff82b8                . = ALIGN (0x8)
+ *fill*         0x1fff82b4        0x4 
+ *(.ram.b)
+                0x1fff82b8                _end = .
+                0x1fff82b8                __end = .
+                0x1fff82b8                PROVIDE (end, .)
+                0x1fff82b8                PROVIDE (__bss_end__, .)
+                0x00002b50                __cy_region_init_ram = LOADADDR (.data)
+                0x00000080                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000170                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x1fff82b8       0x80 load address 0x00002bd0
+                0x1fff82b8                . = _end
+                0x1fff8338                . = (. + 0x80)
+ *fill*         0x1fff82b8       0x80 
+                0x1fff8338                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+
+.cyloadermeta   0x0003ffc0       0x40
+ *(.cyloadermeta)
+ .cyloadermeta  0x0003ffc0       0x40 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x0003ffc0                cy_meta_loader
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyconfigecc    0x80000000        0x1
+ *(.cyconfigecc)
+ .cyconfigecc   0x80000000        0x1 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x80000000                cy_meta_configecc
+
+.cycustnvl      0x90000000        0x4
+ *(.cycustnvl)
+ .cycustnvl     0x90000000        0x4 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90000000                cy_meta_custnvl
+
+.cywolatch      0x90100000        0x4
+ *(.cywolatch)
+ .cywolatch     0x90100000        0x4 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90100000                cy_meta_wonvl
+
+.cyeeprom       0x90200000        0x0
+ *(.cyeeprom)
+                0x00000001                ASSERT ((. <= ((0x90200000 + ee_offset) + ee_size)), .cyeeprom data will not fit in EEPROM)
+
+.cyflashprotect
+                0x90400000      0x100
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000      0x100 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.rel.dyn        0x00002bd0        0x0 load address 0x9050000c
+ .rel.iplt      0x00002bd0        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x978
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_aranges
+                0x00000020       0x60 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_aranges
+                0x00000080       0x18 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_aranges
+                0x00000098       0x48 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_aranges
+                0x000000e0       0x38 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .debug_aranges
+                0x00000118       0x88 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .debug_aranges
+                0x000001a0       0x40 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .debug_aranges
+                0x000001e0       0x88 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .debug_aranges
+                0x00000268      0x2a0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .debug_aranges
+                0x00000508       0x98 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .debug_aranges
+                0x000005a0       0x80 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .debug_aranges
+                0x00000620       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000640       0xc8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .debug_aranges
+                0x00000708       0x98 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .debug_aranges
+                0x000007a0       0x38 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .debug_aranges
+                0x000007d8       0x48 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .debug_aranges
+                0x00000820       0x40 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .debug_aranges
+                0x00000860       0x78 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .debug_aranges
+                0x000008d8       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .debug_aranges
+                0x000008f8       0x48 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .debug_aranges
+                0x00000940       0x20 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .debug_aranges
+                0x00000960       0x18 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x7496
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x115 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_info    0x00000115      0x58e .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x000006a3      0x15a .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x000007fd      0x3cf .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x00000bcc      0x11f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .debug_info    0x00000ceb      0xd7e .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .debug_info    0x00001a69      0x392 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .debug_info    0x00001dfb      0x64d .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .debug_info    0x00002448     0x1374 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .debug_info    0x000037bc      0xa2a .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .debug_info    0x000041e6      0x550 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .debug_info    0x00004736       0x95 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+ .debug_info    0x000047cb      0x99a .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .debug_info    0x00005165      0x655 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .debug_info    0x000057ba      0x243 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .debug_info    0x000059fd      0x43b .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .debug_info    0x00005e38      0x2e4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .debug_info    0x0000611c      0xa3d .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .debug_info    0x00006b59      0x1be .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .debug_info    0x00006d17      0x174 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .debug_info    0x00006e8b      0x1de .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .debug_info    0x00007069      0x42d .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+
+.debug_abbrev   0x00000000     0x1bce
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x95 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_abbrev  0x00000095      0x1fe .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x00000293       0x5d .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x000002f0      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_abbrev  0x000004d8       0x90 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .debug_abbrev  0x00000568      0x20a .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .debug_abbrev  0x00000772       0xfb .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .debug_abbrev  0x0000086d      0x1a7 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .debug_abbrev  0x00000a14      0x254 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .debug_abbrev  0x00000c68      0x1ab .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .debug_abbrev  0x00000e13      0x194 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .debug_abbrev  0x00000fa7       0x14 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000fbb      0x215 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .debug_abbrev  0x000011d0      0x189 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .debug_abbrev  0x00001359      0x11b .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .debug_abbrev  0x00001474      0x16d .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .debug_abbrev  0x000015e1      0x108 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .debug_abbrev  0x000016e9      0x1d8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .debug_abbrev  0x000018c1       0xe1 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .debug_abbrev  0x000019a2       0x90 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .debug_abbrev  0x00001a32       0xe1 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .debug_abbrev  0x00001b13       0xbb .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+
+.debug_line     0x00000000     0x2c83
+ *(.debug_line)
+ .debug_line    0x00000000      0x18b .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x0000018b      0x1e8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000373      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x000004b4      0x235 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x000006e9       0x99 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .debug_line    0x00000782      0x5ea .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .debug_line    0x00000d6c       0xf6 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .debug_line    0x00000e62      0x21a .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .debug_line    0x0000107c      0x816 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .debug_line    0x00001892      0x367 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .debug_line    0x00001bf9      0x260 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .debug_line    0x00001e59       0x66 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+ .debug_line    0x00001ebf      0x2f0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .debug_line    0x000021af      0x21b .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .debug_line    0x000023ca       0xc5 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .debug_line    0x0000248f      0x149 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .debug_line    0x000025d8      0x106 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .debug_line    0x000026de      0x37d .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .debug_line    0x00002a5b       0x85 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .debug_line    0x00002ae0       0xb9 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .debug_line    0x00002b99       0x8d .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .debug_line    0x00002c26       0x5d .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+
+.debug_frame    0x00000000     0x18cc
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_frame   0x0000002c      0x100 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_frame   0x0000012c       0xb8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_frame   0x000001e4       0x50 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .debug_frame   0x00000234      0x1c8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .debug_frame   0x000003fc       0xac .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .debug_frame   0x000004a8      0x194 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .debug_frame   0x0000063c      0x738 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .debug_frame   0x00000d74      0x1f8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .debug_frame   0x00000f6c      0x180 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .debug_frame   0x000010ec      0x1dc .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .debug_frame   0x000012c8      0x194 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .debug_frame   0x0000145c       0x5c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .debug_frame   0x000014b8       0xa0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .debug_frame   0x00001558       0xa0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .debug_frame   0x000015f8      0x150 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .debug_frame   0x00001748       0x2c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .debug_frame   0x00001774       0x70 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .debug_frame   0x000017e4       0x2c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .debug_frame   0x00001810       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00001830       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00001858       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001884       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000018ac       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x275b
+ *(.debug_str)
+ .debug_str     0x00000000      0x189 .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x1d1 (size before relaxing)
+ .debug_str     0x00000189      0x1bc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x36a (size before relaxing)
+ .debug_str     0x00000345       0x8e .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                                0x1f8 (size before relaxing)
+ .debug_str     0x000003d3      0x158 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                                0x323 (size before relaxing)
+ .debug_str     0x0000052b       0x7c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+                                0x20a (size before relaxing)
+ .debug_str     0x000005a7      0x441 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+                                0x648 (size before relaxing)
+ .debug_str     0x000009e8       0xf0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+                                0x2f9 (size before relaxing)
+ .debug_str     0x00000ad8      0x1c6 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+                                0x3c5 (size before relaxing)
+ .debug_str     0x00000c9e      0x7d6 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+                                0xa4c (size before relaxing)
+ .debug_str     0x00001474      0x34f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+                                0x738 (size before relaxing)
+ .debug_str     0x000017c3       0xac .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+                                0x33d (size before relaxing)
+ .debug_str     0x0000186f      0x377 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+                                0x631 (size before relaxing)
+ .debug_str     0x00001be6      0x31c .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+                                0x5f9 (size before relaxing)
+ .debug_str     0x00001f02       0x65 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+                                0x2bf (size before relaxing)
+ .debug_str     0x00001f67      0x124 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+                                0x3dd (size before relaxing)
+ .debug_str     0x0000208b       0xbe .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+                                0x2dd (size before relaxing)
+ .debug_str     0x00002149      0x233 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+                                0x718 (size before relaxing)
+ .debug_str     0x0000237c       0x42 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+                                0x284 (size before relaxing)
+ .debug_str     0x000023be       0x8d .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+                                0x238 (size before relaxing)
+ .debug_str     0x0000244b       0x23 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+                                0x2a3 (size before relaxing)
+ .debug_str     0x0000246e      0x2ed .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+                                0x5b2 (size before relaxing)
+
+.debug_loc      0x00000000     0x3e85
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x23a .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x0000023a      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_loc     0x0000037e       0x42 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .debug_loc     0x000003c0      0xebb .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .debug_loc     0x0000127b      0x238 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .debug_loc     0x000014b3      0x3b2 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .debug_loc     0x00001865      0xa11 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .debug_loc     0x00002276      0x1e4 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .debug_loc     0x0000245a      0x705 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .debug_loc     0x00002b5f      0x435 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .debug_loc     0x00002f94      0x171 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .debug_loc     0x00003105      0x3a8 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .debug_loc     0x000034ad       0x26 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .debug_loc     0x000034d3      0x88e .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .debug_loc     0x00003d61       0x36 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .debug_loc     0x00003d97       0x84 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .debug_loc     0x00003e1b       0x6a .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x988
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_ranges  0x00000010       0x50 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_ranges  0x00000060       0x38 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_ranges  0x00000098       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .debug_ranges  0x000000c0      0x1f0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .debug_ranges  0x000002b0       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .debug_ranges  0x000002e0       0x78 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .debug_ranges  0x00000358      0x290 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .debug_ranges  0x000005e8       0x88 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .debug_ranges  0x00000670       0x70 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .debug_ranges  0x000006e0       0xd0 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .debug_ranges  0x000007b0       0x88 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .debug_ranges  0x00000838       0x28 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .debug_ranges  0x00000860       0x38 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .debug_ranges  0x00000898       0x30 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .debug_ranges  0x000008c8       0x68 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .debug_ranges  0x00000930       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .debug_ranges  0x00000940       0x38 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .debug_ranges  0x00000978       0x10 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e .\CortexM3\ARM_GCC_541\Debug\main.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .ARM.attributes
+                0x0000001d       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x33 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .ARM.attributes
+                0x00000098       0x33 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .ARM.attributes
+                0x000000cb       0x33 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000fe       0x33 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .ARM.attributes
+                0x00000131       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(Wait_Forever.o)
+ .ARM.attributes
+                0x00000164       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(BL.o)
+ .ARM.attributes
+                0x00000197       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_boot.o)
+ .ARM.attributes
+                0x000001ca       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyFlash.o)
+ .ARM.attributes
+                0x000001fd       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyLib.o)
+ .ARM.attributes
+                0x00000230       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(cyPm.o)
+ .ARM.attributes
+                0x00000263       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CySpc.o)
+ .ARM.attributes
+                0x00000296       0x21 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x000002b7       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS.o)
+ .ARM.attributes
+                0x000002ea       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_drv.o)
+ .ARM.attributes
+                0x0000031d       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_episr.o)
+ .ARM.attributes
+                0x00000350       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_hid.o)
+ .ARM.attributes
+                0x00000383       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_pm.o)
+ .ARM.attributes
+                0x000003b6       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_std.o)
+ .ARM.attributes
+                0x000003e9       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_vnd.o)
+ .ARM.attributes
+                0x0000041c       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_Dp.o)
+ .ARM.attributes
+                0x0000044f       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_cls.o)
+ .ARM.attributes
+                0x00000482       0x33 .\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.a(USBFS_descr.o)
+ .ARM.attributes
+                0x000004b5       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x000004e2       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000050f       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000053c       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000569       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000596       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000005c3       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .ARM.attributes
+                0x000005f0       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(\\sauron\wormley\shared\git\local\CE95391_PSoC5LP_USB_Bootloader.cydsn\CortexM3\ARM_GCC_541\Debug\CE95391_PSoC5LP_USB_Bootloader.elf elf32-littlearm)

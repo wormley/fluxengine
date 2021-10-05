@@ -1,0 +1,1514 @@
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"USBFS_descr.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	USBFS_MSOS_CONFIGURATION_DESCR
+  20              		.global	USBFS_MSOS_DESCRIPTOR
+  21              		.global	USBFS_TABLE
+  22              		.global	USBFS_DEVICE0_TABLE
+  23              		.global	USBFS_DEVICE0_CONFIGURATION0_TABLE
+  24              		.global	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+  25              		.global	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+  26              		.global	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE
+  27              		.global	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE
+  28              		.global	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE
+  29              		.comm	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF,65,4
+  30              		.comm	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_SCB,4,4
+  31              		.global	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE
+  32              		.comm	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF,65,4
+  33              		.comm	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB,4,4
+  34              		.global	USBFS_HIDREPORT_DESCRIPTOR1
+  35              		.global	USBFS_SN_STRING_DESCRIPTOR
+  36              		.global	USBFS_STRING_DESCRIPTORS
+  37              		.global	USBFS_DEVICE0_CONFIGURATION0_DESCR
+  38              		.global	USBFS_DEVICE0_DESCR
+  39              		.section	.rodata
+  40              		.align	2
+  41              		.type	USBFS_MSOS_CONFIGURATION_DESCR, %object
+  42              		.size	USBFS_MSOS_CONFIGURATION_DESCR, 40
+  43              	USBFS_MSOS_CONFIGURATION_DESCR:
+  44 0000 28       		.byte	40
+  45 0001 00       		.byte	0
+  46 0002 00       		.byte	0
+  47 0003 00       		.byte	0
+  48 0004 00       		.byte	0
+  49 0005 01       		.byte	1
+  50 0006 04       		.byte	4
+  51 0007 00       		.byte	0
+  52 0008 01       		.byte	1
+  53 0009 00       		.byte	0
+  54 000a 00       		.byte	0
+  55 000b 00       		.byte	0
+  56 000c 00       		.byte	0
+  57 000d 00       		.byte	0
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 2
+
+
+  58 000e 00       		.byte	0
+  59 000f 00       		.byte	0
+  60 0010 00       		.byte	0
+  61 0011 01       		.byte	1
+  62 0012 43       		.byte	67
+  63 0013 59       		.byte	89
+  64 0014 55       		.byte	85
+  65 0015 53       		.byte	83
+  66 0016 42       		.byte	66
+  67 0017 00       		.byte	0
+  68 0018 00       		.byte	0
+  69 0019 00       		.byte	0
+  70 001a 30       		.byte	48
+  71 001b 30       		.byte	48
+  72 001c 30       		.byte	48
+  73 001d 30       		.byte	48
+  74 001e 31       		.byte	49
+  75 001f 00       		.byte	0
+  76 0020 00       		.byte	0
+  77 0021 00       		.byte	0
+  78 0022 00       		.byte	0
+  79 0023 00       		.byte	0
+  80 0024 00       		.byte	0
+  81 0025 00       		.byte	0
+  82 0026 00       		.byte	0
+  83 0027 00       		.byte	0
+  84              		.type	USBFS_MSOS_DESCRIPTOR, %object
+  85              		.size	USBFS_MSOS_DESCRIPTOR, 18
+  86              	USBFS_MSOS_DESCRIPTOR:
+  87 0028 12       		.byte	18
+  88 0029 03       		.byte	3
+  89 002a 4D       		.byte	77
+  90 002b 00       		.byte	0
+  91 002c 53       		.byte	83
+  92 002d 00       		.byte	0
+  93 002e 46       		.byte	70
+  94 002f 00       		.byte	0
+  95 0030 54       		.byte	84
+  96 0031 00       		.byte	0
+  97 0032 31       		.byte	49
+  98 0033 00       		.byte	0
+  99 0034 30       		.byte	48
+ 100 0035 00       		.byte	0
+ 101 0036 30       		.byte	48
+ 102 0037 00       		.byte	0
+ 103 0038 01       		.byte	1
+ 104 0039 00       		.byte	0
+ 105 003a 0000     		.space	2
+ 106              		.type	USBFS_TABLE, %object
+ 107              		.size	USBFS_TABLE, 8
+ 108              	USBFS_TABLE:
+ 109 003c 01       		.byte	1
+ 110 003d 000000   		.space	3
+ 111 0040 00000000 		.word	USBFS_DEVICE0_TABLE
+ 112              		.type	USBFS_DEVICE0_TABLE, %object
+ 113              		.size	USBFS_DEVICE0_TABLE, 24
+ 114              	USBFS_DEVICE0_TABLE:
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 3
+
+
+ 115 0044 01       		.byte	1
+ 116 0045 000000   		.space	3
+ 117 0048 00000000 		.word	USBFS_DEVICE0_DESCR
+ 118 004c 00       		.byte	0
+ 119 004d 000000   		.space	3
+ 120 0050 00000000 		.word	0
+ 121 0054 01       		.byte	1
+ 122 0055 000000   		.space	3
+ 123 0058 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_TABLE
+ 124              		.type	USBFS_DEVICE0_CONFIGURATION0_TABLE, %object
+ 125              		.size	USBFS_DEVICE0_CONFIGURATION0_TABLE, 32
+ 126              	USBFS_DEVICE0_CONFIGURATION0_TABLE:
+ 127 005c 01       		.byte	1
+ 128 005d 000000   		.space	3
+ 129 0060 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_DESCR
+ 130 0064 02       		.byte	2
+ 131 0065 000000   		.space	3
+ 132 0068 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 133 006c 01       		.byte	1
+ 134 006d 000000   		.space	3
+ 135 0070 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE
+ 136 0074 00       		.byte	0
+ 137 0075 000000   		.space	3
+ 138 0078 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 139              		.type	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, %object
+ 140              		.size	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, 1
+ 141              	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS:
+ 142 007c 03       		.byte	3
+ 143 007d 000000   		.space	3
+ 144              		.type	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, %object
+ 145              		.size	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, 16
+ 146              	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE:
+ 147 0080 00       		.byte	0
+ 148 0081 00       		.byte	0
+ 149 0082 01       		.byte	1
+ 150 0083 03       		.byte	3
+ 151 0084 4000     		.short	64
+ 152 0086 03       		.byte	3
+ 153 0087 00       		.space	1
+ 154 0088 00       		.byte	0
+ 155 0089 00       		.byte	0
+ 156 008a 82       		.byte	-126
+ 157 008b 03       		.byte	3
+ 158 008c 4000     		.short	64
+ 159 008e 03       		.byte	3
+ 160 008f 00       		.space	1
+ 161              		.type	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE, %object
+ 162              		.size	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE, 8
+ 163              	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE:
+ 164 0090 01       		.byte	1
+ 165 0091 000000   		.space	3
+ 166 0094 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE
+ 167              		.type	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE, %object
+ 168              		.size	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE, 40
+ 169              	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE:
+ 170 0098 00       		.byte	0
+ 171 0099 000000   		.space	3
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 4
+
+
+ 172 009c 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE
+ 173 00a0 00       		.byte	0
+ 174 00a1 000000   		.space	3
+ 175 00a4 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE
+ 176 00a8 00       		.byte	0
+ 177 00a9 000000   		.space	3
+ 178 00ac 00000000 		.word	0
+ 179 00b0 01       		.byte	1
+ 180 00b1 000000   		.space	3
+ 181 00b4 00000000 		.word	USBFS_HIDREPORT_DESCRIPTOR1
+ 182 00b8 01       		.byte	1
+ 183 00b9 000000   		.space	3
+ 184 00bc 12000000 		.word	USBFS_DEVICE0_CONFIGURATION0_DESCR+18
+ 185              		.type	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE, %object
+ 186              		.size	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE, 12
+ 187              	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE:
+ 188 00c0 4100     		.short	65
+ 189 00c2 0000     		.space	2
+ 190 00c4 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF
+ 191 00c8 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_SCB
+ 192              		.type	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE, %object
+ 193              		.size	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE, 12
+ 194              	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE:
+ 195 00cc 4100     		.short	65
+ 196 00ce 0000     		.space	2
+ 197 00d0 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF
+ 198 00d4 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB
+ 199              		.type	USBFS_HIDREPORT_DESCRIPTOR1, %object
+ 200              		.size	USBFS_HIDREPORT_DESCRIPTOR1, 40
+ 201              	USBFS_HIDREPORT_DESCRIPTOR1:
+ 202 00d8 24       		.byte	36
+ 203 00d9 00       		.byte	0
+ 204 00da 05       		.byte	5
+ 205 00db 01       		.byte	1
+ 206 00dc 09       		.byte	9
+ 207 00dd 00       		.byte	0
+ 208 00de A1       		.byte	-95
+ 209 00df 00       		.byte	0
+ 210 00e0 09       		.byte	9
+ 211 00e1 00       		.byte	0
+ 212 00e2 A1       		.byte	-95
+ 213 00e3 00       		.byte	0
+ 214 00e4 09       		.byte	9
+ 215 00e5 00       		.byte	0
+ 216 00e6 15       		.byte	21
+ 217 00e7 00       		.byte	0
+ 218 00e8 25       		.byte	37
+ 219 00e9 FF       		.byte	-1
+ 220 00ea 75       		.byte	117
+ 221 00eb 08       		.byte	8
+ 222 00ec 95       		.byte	-107
+ 223 00ed 40       		.byte	64
+ 224 00ee 91       		.byte	-111
+ 225 00ef 02       		.byte	2
+ 226 00f0 09       		.byte	9
+ 227 00f1 00       		.byte	0
+ 228 00f2 15       		.byte	21
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 5
+
+
+ 229 00f3 00       		.byte	0
+ 230 00f4 25       		.byte	37
+ 231 00f5 FF       		.byte	-1
+ 232 00f6 75       		.byte	117
+ 233 00f7 08       		.byte	8
+ 234 00f8 95       		.byte	-107
+ 235 00f9 40       		.byte	64
+ 236 00fa 81       		.byte	-127
+ 237 00fb 02       		.byte	2
+ 238 00fc C0       		.byte	-64
+ 239 00fd C0       		.byte	-64
+ 240 00fe 00       		.byte	0
+ 241 00ff 00       		.byte	0
+ 242              		.type	USBFS_SN_STRING_DESCRIPTOR, %object
+ 243              		.size	USBFS_SN_STRING_DESCRIPTOR, 10
+ 244              	USBFS_SN_STRING_DESCRIPTOR:
+ 245 0100 0A       		.byte	10
+ 246 0101 03       		.byte	3
+ 247 0102 30       		.byte	48
+ 248 0103 00       		.byte	0
+ 249 0104 30       		.byte	48
+ 250 0105 00       		.byte	0
+ 251 0106 30       		.byte	48
+ 252 0107 00       		.byte	0
+ 253 0108 31       		.byte	49
+ 254 0109 00       		.byte	0
+ 255 010a 0000     		.space	2
+ 256              		.type	USBFS_STRING_DESCRIPTORS, %object
+ 257              		.size	USBFS_STRING_DESCRIPTORS, 83
+ 258              	USBFS_STRING_DESCRIPTORS:
+ 259 010c 04       		.byte	4
+ 260 010d 03       		.byte	3
+ 261 010e 09       		.byte	9
+ 262 010f 04       		.byte	4
+ 263 0110 2C       		.byte	44
+ 264 0111 03       		.byte	3
+ 265 0112 43       		.byte	67
+ 266 0113 00       		.byte	0
+ 267 0114 79       		.byte	121
+ 268 0115 00       		.byte	0
+ 269 0116 70       		.byte	112
+ 270 0117 00       		.byte	0
+ 271 0118 72       		.byte	114
+ 272 0119 00       		.byte	0
+ 273 011a 65       		.byte	101
+ 274 011b 00       		.byte	0
+ 275 011c 73       		.byte	115
+ 276 011d 00       		.byte	0
+ 277 011e 73       		.byte	115
+ 278 011f 00       		.byte	0
+ 279 0120 20       		.byte	32
+ 280 0121 00       		.byte	0
+ 281 0122 53       		.byte	83
+ 282 0123 00       		.byte	0
+ 283 0124 65       		.byte	101
+ 284 0125 00       		.byte	0
+ 285 0126 6D       		.byte	109
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 6
+
+
+ 286 0127 00       		.byte	0
+ 287 0128 69       		.byte	105
+ 288 0129 00       		.byte	0
+ 289 012a 63       		.byte	99
+ 290 012b 00       		.byte	0
+ 291 012c 6F       		.byte	111
+ 292 012d 00       		.byte	0
+ 293 012e 6E       		.byte	110
+ 294 012f 00       		.byte	0
+ 295 0130 64       		.byte	100
+ 296 0131 00       		.byte	0
+ 297 0132 75       		.byte	117
+ 298 0133 00       		.byte	0
+ 299 0134 63       		.byte	99
+ 300 0135 00       		.byte	0
+ 301 0136 74       		.byte	116
+ 302 0137 00       		.byte	0
+ 303 0138 6F       		.byte	111
+ 304 0139 00       		.byte	0
+ 305 013a 72       		.byte	114
+ 306 013b 00       		.byte	0
+ 307 013c 22       		.byte	34
+ 308 013d 03       		.byte	3
+ 309 013e 50       		.byte	80
+ 310 013f 00       		.byte	0
+ 311 0140 53       		.byte	83
+ 312 0141 00       		.byte	0
+ 313 0142 6F       		.byte	111
+ 314 0143 00       		.byte	0
+ 315 0144 43       		.byte	67
+ 316 0145 00       		.byte	0
+ 317 0146 33       		.byte	51
+ 318 0147 00       		.byte	0
+ 319 0148 20       		.byte	32
+ 320 0149 00       		.byte	0
+ 321 014a 42       		.byte	66
+ 322 014b 00       		.byte	0
+ 323 014c 6F       		.byte	111
+ 324 014d 00       		.byte	0
+ 325 014e 6F       		.byte	111
+ 326 014f 00       		.byte	0
+ 327 0150 74       		.byte	116
+ 328 0151 00       		.byte	0
+ 329 0152 6C       		.byte	108
+ 330 0153 00       		.byte	0
+ 331 0154 6F       		.byte	111
+ 332 0155 00       		.byte	0
+ 333 0156 61       		.byte	97
+ 334 0157 00       		.byte	0
+ 335 0158 64       		.byte	100
+ 336 0159 00       		.byte	0
+ 337 015a 65       		.byte	101
+ 338 015b 00       		.byte	0
+ 339 015c 72       		.byte	114
+ 340 015d 00       		.byte	0
+ 341 015e 00       		.byte	0
+ 342 015f 00       		.space	1
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 7
+
+
+ 343              		.type	USBFS_DEVICE0_CONFIGURATION0_DESCR, %object
+ 344              		.size	USBFS_DEVICE0_CONFIGURATION0_DESCR, 41
+ 345              	USBFS_DEVICE0_CONFIGURATION0_DESCR:
+ 346 0160 09       		.byte	9
+ 347 0161 02       		.byte	2
+ 348 0162 29       		.byte	41
+ 349 0163 00       		.byte	0
+ 350 0164 01       		.byte	1
+ 351 0165 01       		.byte	1
+ 352 0166 02       		.byte	2
+ 353 0167 80       		.byte	-128
+ 354 0168 0A       		.byte	10
+ 355 0169 09       		.byte	9
+ 356 016a 04       		.byte	4
+ 357 016b 00       		.byte	0
+ 358 016c 00       		.byte	0
+ 359 016d 02       		.byte	2
+ 360 016e 03       		.byte	3
+ 361 016f 00       		.byte	0
+ 362 0170 00       		.byte	0
+ 363 0171 02       		.byte	2
+ 364 0172 09       		.byte	9
+ 365 0173 21       		.byte	33
+ 366 0174 11       		.byte	17
+ 367 0175 01       		.byte	1
+ 368 0176 00       		.byte	0
+ 369 0177 01       		.byte	1
+ 370 0178 22       		.byte	34
+ 371 0179 24       		.byte	36
+ 372 017a 00       		.byte	0
+ 373 017b 07       		.byte	7
+ 374 017c 05       		.byte	5
+ 375 017d 01       		.byte	1
+ 376 017e 03       		.byte	3
+ 377 017f 40       		.byte	64
+ 378 0180 00       		.byte	0
+ 379 0181 01       		.byte	1
+ 380 0182 07       		.byte	7
+ 381 0183 05       		.byte	5
+ 382 0184 82       		.byte	-126
+ 383 0185 03       		.byte	3
+ 384 0186 40       		.byte	64
+ 385 0187 00       		.byte	0
+ 386 0188 01       		.byte	1
+ 387 0189 000000   		.space	3
+ 388              		.type	USBFS_DEVICE0_DESCR, %object
+ 389              		.size	USBFS_DEVICE0_DESCR, 18
+ 390              	USBFS_DEVICE0_DESCR:
+ 391 018c 12       		.byte	18
+ 392 018d 01       		.byte	1
+ 393 018e 00       		.byte	0
+ 394 018f 02       		.byte	2
+ 395 0190 00       		.byte	0
+ 396 0191 00       		.byte	0
+ 397 0192 00       		.byte	0
+ 398 0193 08       		.byte	8
+ 399 0194 B4       		.byte	-76
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 8
+
+
+ 400 0195 04       		.byte	4
+ 401 0196 1D       		.byte	29
+ 402 0197 B7       		.byte	-73
+ 403 0198 01       		.byte	1
+ 404 0199 30       		.byte	48
+ 405 019a 01       		.byte	1
+ 406 019b 02       		.byte	2
+ 407 019c 80       		.byte	-128
+ 408 019d 01       		.byte	1
+ 409              		.text
+ 410              	.Letext0:
+ 411              		.file 1 "Generated_Source\\PSoC5\\cytypes.h"
+ 412              		.file 2 "Generated_Source\\PSoC5\\USBFS.h"
+ 413              		.file 3 "Generated_Source\\PSoC5\\USBFS_descr.c"
+ 414              		.section	.debug_info,"",%progbits
+ 415              	.Ldebug_info0:
+ 416 0000 29040000 		.4byte	0x429
+ 417 0004 0400     		.2byte	0x4
+ 418 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 419 000a 04       		.byte	0x4
+ 420 000b 01       		.uleb128 0x1
+ 421 000c 3B020000 		.4byte	.LASF52
+ 422 0010 0C       		.byte	0xc
+ 423 0011 40040000 		.4byte	.LASF53
+ 424 0015 83010000 		.4byte	.LASF54
+ 425 0019 00000000 		.4byte	.Ldebug_line0
+ 426 001d 02       		.uleb128 0x2
+ 427 001e 01       		.byte	0x1
+ 428 001f 06       		.byte	0x6
+ 429 0020 4E050000 		.4byte	.LASF0
+ 430 0024 02       		.uleb128 0x2
+ 431 0025 01       		.byte	0x1
+ 432 0026 08       		.byte	0x8
+ 433 0027 86040000 		.4byte	.LASF1
+ 434 002b 02       		.uleb128 0x2
+ 435 002c 02       		.byte	0x2
+ 436 002d 05       		.byte	0x5
+ 437 002e DD040000 		.4byte	.LASF2
+ 438 0032 02       		.uleb128 0x2
+ 439 0033 02       		.byte	0x2
+ 440 0034 07       		.byte	0x7
+ 441 0035 17010000 		.4byte	.LASF3
+ 442 0039 02       		.uleb128 0x2
+ 443 003a 04       		.byte	0x4
+ 444 003b 05       		.byte	0x5
+ 445 003c 32050000 		.4byte	.LASF4
+ 446 0040 02       		.uleb128 0x2
+ 447 0041 04       		.byte	0x4
+ 448 0042 07       		.byte	0x7
+ 449 0043 0A040000 		.4byte	.LASF5
+ 450 0047 02       		.uleb128 0x2
+ 451 0048 08       		.byte	0x8
+ 452 0049 05       		.byte	0x5
+ 453 004a 9D040000 		.4byte	.LASF6
+ 454 004e 02       		.uleb128 0x2
+ 455 004f 08       		.byte	0x8
+ 456 0050 07       		.byte	0x7
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 9
+
+
+ 457 0051 29040000 		.4byte	.LASF7
+ 458 0055 03       		.uleb128 0x3
+ 459 0056 04       		.byte	0x4
+ 460 0057 05       		.byte	0x5
+ 461 0058 696E7400 		.ascii	"int\000"
+ 462 005c 02       		.uleb128 0x2
+ 463 005d 04       		.byte	0x4
+ 464 005e 07       		.byte	0x7
+ 465 005f 1C040000 		.4byte	.LASF8
+ 466 0063 04       		.uleb128 0x4
+ 467 0064 22050000 		.4byte	.LASF9
+ 468 0068 01       		.byte	0x1
+ 469 0069 E901     		.2byte	0x1e9
+ 470 006b 24000000 		.4byte	0x24
+ 471 006f 04       		.uleb128 0x4
+ 472 0070 B1030000 		.4byte	.LASF10
+ 473 0074 01       		.byte	0x1
+ 474 0075 EA01     		.2byte	0x1ea
+ 475 0077 32000000 		.4byte	0x32
+ 476 007b 02       		.uleb128 0x2
+ 477 007c 04       		.byte	0x4
+ 478 007d 04       		.byte	0x4
+ 479 007e DD010000 		.4byte	.LASF11
+ 480 0082 02       		.uleb128 0x2
+ 481 0083 08       		.byte	0x8
+ 482 0084 04       		.byte	0x4
+ 483 0085 AA030000 		.4byte	.LASF12
+ 484 0089 02       		.uleb128 0x2
+ 485 008a 01       		.byte	0x1
+ 486 008b 08       		.byte	0x8
+ 487 008c B7040000 		.4byte	.LASF13
+ 488 0090 05       		.uleb128 0x5
+ 489 0091 63000000 		.4byte	0x63
+ 490 0095 02       		.uleb128 0x2
+ 491 0096 08       		.byte	0x8
+ 492 0097 04       		.byte	0x4
+ 493 0098 42050000 		.4byte	.LASF14
+ 494 009c 02       		.uleb128 0x2
+ 495 009d 04       		.byte	0x4
+ 496 009e 07       		.byte	0x7
+ 497 009f 94040000 		.4byte	.LASF15
+ 498 00a3 06       		.uleb128 0x6
+ 499 00a4 08       		.byte	0x8
+ 500 00a5 02       		.byte	0x2
+ 501 00a6 A1       		.byte	0xa1
+ 502 00a7 F4000000 		.4byte	0xf4
+ 503 00ab 07       		.uleb128 0x7
+ 504 00ac 28050000 		.4byte	.LASF16
+ 505 00b0 02       		.byte	0x2
+ 506 00b1 A3       		.byte	0xa3
+ 507 00b2 63000000 		.4byte	0x63
+ 508 00b6 00       		.byte	0
+ 509 00b7 07       		.uleb128 0x7
+ 510 00b8 C7010000 		.4byte	.LASF17
+ 511 00bc 02       		.byte	0x2
+ 512 00bd A4       		.byte	0xa4
+ 513 00be 63000000 		.4byte	0x63
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 10
+
+
+ 514 00c2 01       		.byte	0x1
+ 515 00c3 07       		.uleb128 0x7
+ 516 00c4 11030000 		.4byte	.LASF18
+ 517 00c8 02       		.byte	0x2
+ 518 00c9 A5       		.byte	0xa5
+ 519 00ca 63000000 		.4byte	0x63
+ 520 00ce 02       		.byte	0x2
+ 521 00cf 07       		.uleb128 0x7
+ 522 00d0 C9020000 		.4byte	.LASF19
+ 523 00d4 02       		.byte	0x2
+ 524 00d5 A6       		.byte	0xa6
+ 525 00d6 63000000 		.4byte	0x63
+ 526 00da 03       		.byte	0x3
+ 527 00db 07       		.uleb128 0x7
+ 528 00dc D2040000 		.4byte	.LASF20
+ 529 00e0 02       		.byte	0x2
+ 530 00e1 A7       		.byte	0xa7
+ 531 00e2 6F000000 		.4byte	0x6f
+ 532 00e6 04       		.byte	0x4
+ 533 00e7 07       		.uleb128 0x7
+ 534 00e8 A3050000 		.4byte	.LASF21
+ 535 00ec 02       		.byte	0x2
+ 536 00ed A8       		.byte	0xa8
+ 537 00ee 63000000 		.4byte	0x63
+ 538 00f2 06       		.byte	0x6
+ 539 00f3 00       		.byte	0
+ 540 00f4 08       		.uleb128 0x8
+ 541 00f5 6C040000 		.4byte	.LASF22
+ 542 00f9 02       		.byte	0x2
+ 543 00fa A9       		.byte	0xa9
+ 544 00fb A3000000 		.4byte	0xa3
+ 545 00ff 06       		.uleb128 0x6
+ 546 0100 04       		.byte	0x4
+ 547 0101 02       		.byte	0x2
+ 548 0102 AB       		.byte	0xab
+ 549 0103 20010000 		.4byte	0x120
+ 550 0107 07       		.uleb128 0x7
+ 551 0108 3B050000 		.4byte	.LASF23
+ 552 010c 02       		.byte	0x2
+ 553 010d AD       		.byte	0xad
+ 554 010e 63000000 		.4byte	0x63
+ 555 0112 00       		.byte	0
+ 556 0113 07       		.uleb128 0x7
+ 557 0114 9C050000 		.4byte	.LASF24
+ 558 0118 02       		.byte	0x2
+ 559 0119 AE       		.byte	0xae
+ 560 011a 6F000000 		.4byte	0x6f
+ 561 011e 02       		.byte	0x2
+ 562 011f 00       		.byte	0
+ 563 0120 08       		.uleb128 0x8
+ 564 0121 D4020000 		.4byte	.LASF25
+ 565 0125 02       		.byte	0x2
+ 566 0126 AF       		.byte	0xaf
+ 567 0127 FF000000 		.4byte	0xff
+ 568 012b 06       		.uleb128 0x6
+ 569 012c 0C       		.byte	0xc
+ 570 012d 02       		.byte	0x2
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 11
+
+
+ 571 012e B1       		.byte	0xb1
+ 572 012f 58010000 		.4byte	0x158
+ 573 0133 07       		.uleb128 0x7
+ 574 0134 E3000000 		.4byte	.LASF26
+ 575 0138 02       		.byte	0x2
+ 576 0139 B3       		.byte	0xb3
+ 577 013a 6F000000 		.4byte	0x6f
+ 578 013e 00       		.byte	0
+ 579 013f 07       		.uleb128 0x7
+ 580 0140 C1010000 		.4byte	.LASF27
+ 581 0144 02       		.byte	0x2
+ 582 0145 B4       		.byte	0xb4
+ 583 0146 58010000 		.4byte	0x158
+ 584 014a 04       		.byte	0x4
+ 585 014b 07       		.uleb128 0x7
+ 586 014c 14000000 		.4byte	.LASF28
+ 587 0150 02       		.byte	0x2
+ 588 0151 B5       		.byte	0xb5
+ 589 0152 5E010000 		.4byte	0x15e
+ 590 0156 08       		.byte	0x8
+ 591 0157 00       		.byte	0
+ 592 0158 09       		.uleb128 0x9
+ 593 0159 04       		.byte	0x4
+ 594 015a 90000000 		.4byte	0x90
+ 595 015e 09       		.uleb128 0x9
+ 596 015f 04       		.byte	0x4
+ 597 0160 20010000 		.4byte	0x120
+ 598 0164 08       		.uleb128 0x8
+ 599 0165 D2010000 		.4byte	.LASF29
+ 600 0169 02       		.byte	0x2
+ 601 016a B6       		.byte	0xb6
+ 602 016b 2B010000 		.4byte	0x12b
+ 603 016f 06       		.uleb128 0x6
+ 604 0170 08       		.byte	0x8
+ 605 0171 02       		.byte	0x2
+ 606 0172 B8       		.byte	0xb8
+ 607 0173 8E010000 		.4byte	0x18e
+ 608 0177 0A       		.uleb128 0xa
+ 609 0178 6300     		.ascii	"c\000"
+ 610 017a 02       		.byte	0x2
+ 611 017b BA       		.byte	0xba
+ 612 017c 63000000 		.4byte	0x63
+ 613 0180 00       		.byte	0
+ 614 0181 07       		.uleb128 0x7
+ 615 0182 65040000 		.4byte	.LASF30
+ 616 0186 02       		.byte	0x2
+ 617 0187 BB       		.byte	0xbb
+ 618 0188 8E010000 		.4byte	0x18e
+ 619 018c 04       		.byte	0x4
+ 620 018d 00       		.byte	0
+ 621 018e 09       		.uleb128 0x9
+ 622 018f 04       		.byte	0x4
+ 623 0190 94010000 		.4byte	0x194
+ 624 0194 0B       		.uleb128 0xb
+ 625 0195 08       		.uleb128 0x8
+ 626 0196 AB040000 		.4byte	.LASF31
+ 627 019a 02       		.byte	0x2
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 12
+
+
+ 628 019b BC       		.byte	0xbc
+ 629 019c 6F010000 		.4byte	0x16f
+ 630 01a0 0C       		.uleb128 0xc
+ 631 01a1 B0010000 		.4byte	0x1b0
+ 632 01a5 B0010000 		.4byte	0x1b0
+ 633 01a9 0D       		.uleb128 0xd
+ 634 01aa 9C000000 		.4byte	0x9c
+ 635 01ae 11       		.byte	0x11
+ 636 01af 00       		.byte	0
+ 637 01b0 0E       		.uleb128 0xe
+ 638 01b1 63000000 		.4byte	0x63
+ 639 01b5 0F       		.uleb128 0xf
+ 640 01b6 00000000 		.4byte	.LASF32
+ 641 01ba 03       		.byte	0x3
+ 642 01bb 24       		.byte	0x24
+ 643 01bc C6010000 		.4byte	0x1c6
+ 644 01c0 05       		.uleb128 0x5
+ 645 01c1 03       		.byte	0x3
+ 646 01c2 00000000 		.4byte	USBFS_DEVICE0_DESCR
+ 647 01c6 0E       		.uleb128 0xe
+ 648 01c7 A0010000 		.4byte	0x1a0
+ 649 01cb 0C       		.uleb128 0xc
+ 650 01cc B0010000 		.4byte	0x1b0
+ 651 01d0 DB010000 		.4byte	0x1db
+ 652 01d4 0D       		.uleb128 0xd
+ 653 01d5 9C000000 		.4byte	0x9c
+ 654 01d9 28       		.byte	0x28
+ 655 01da 00       		.byte	0
+ 656 01db 0F       		.uleb128 0xf
+ 657 01dc E7030000 		.4byte	.LASF33
+ 658 01e0 03       		.byte	0x3
+ 659 01e1 37       		.byte	0x37
+ 660 01e2 EC010000 		.4byte	0x1ec
+ 661 01e6 05       		.uleb128 0x5
+ 662 01e7 03       		.byte	0x3
+ 663 01e8 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_DESCR
+ 664 01ec 0E       		.uleb128 0xe
+ 665 01ed CB010000 		.4byte	0x1cb
+ 666 01f1 0C       		.uleb128 0xc
+ 667 01f2 01020000 		.4byte	0x201
+ 668 01f6 01020000 		.4byte	0x201
+ 669 01fa 0D       		.uleb128 0xd
+ 670 01fb 9C000000 		.4byte	0x9c
+ 671 01ff 00       		.byte	0
+ 672 0200 00       		.byte	0
+ 673 0201 0E       		.uleb128 0xe
+ 674 0202 95010000 		.4byte	0x195
+ 675 0206 0F       		.uleb128 0xf
+ 676 0207 E9000000 		.4byte	.LASF34
+ 677 020b 03       		.byte	0x3
+ 678 020c E5       		.byte	0xe5
+ 679 020d 17020000 		.4byte	0x217
+ 680 0211 05       		.uleb128 0x5
+ 681 0212 03       		.byte	0x3
+ 682 0213 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE
+ 683 0217 0E       		.uleb128 0xe
+ 684 0218 F1010000 		.4byte	0x1f1
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 13
+
+
+ 685 021c 0C       		.uleb128 0xc
+ 686 021d 2C020000 		.4byte	0x22c
+ 687 0221 2C020000 		.4byte	0x22c
+ 688 0225 0D       		.uleb128 0xd
+ 689 0226 9C000000 		.4byte	0x9c
+ 690 022a 01       		.byte	0x1
+ 691 022b 00       		.byte	0
+ 692 022c 0E       		.uleb128 0xe
+ 693 022d F4000000 		.4byte	0xf4
+ 694 0231 0F       		.uleb128 0xf
+ 695 0232 B8030000 		.4byte	.LASF35
+ 696 0236 03       		.byte	0x3
+ 697 0237 F0       		.byte	0xf0
+ 698 0238 42020000 		.4byte	0x242
+ 699 023c 05       		.uleb128 0x5
+ 700 023d 03       		.byte	0x3
+ 701 023e 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 702 0242 0E       		.uleb128 0xe
+ 703 0243 1C020000 		.4byte	0x21c
+ 704 0247 0C       		.uleb128 0xc
+ 705 0248 B0010000 		.4byte	0x1b0
+ 706 024c 57020000 		.4byte	0x257
+ 707 0250 0D       		.uleb128 0xd
+ 708 0251 9C000000 		.4byte	0x9c
+ 709 0255 00       		.byte	0
+ 710 0256 00       		.byte	0
+ 711 0257 0F       		.uleb128 0xf
+ 712 0258 21000000 		.4byte	.LASF36
+ 713 025c 03       		.byte	0x3
+ 714 025d F5       		.byte	0xf5
+ 715 025e 68020000 		.4byte	0x268
+ 716 0262 05       		.uleb128 0x5
+ 717 0263 03       		.byte	0x3
+ 718 0264 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 719 0268 0E       		.uleb128 0xe
+ 720 0269 47020000 		.4byte	0x247
+ 721 026d 0C       		.uleb128 0xc
+ 722 026e 01020000 		.4byte	0x201
+ 723 0272 7D020000 		.4byte	0x27d
+ 724 0276 0D       		.uleb128 0xd
+ 725 0277 9C000000 		.4byte	0x9c
+ 726 027b 03       		.byte	0x3
+ 727 027c 00       		.byte	0
+ 728 027d 0F       		.uleb128 0xf
+ 729 027e EE020000 		.4byte	.LASF37
+ 730 0282 03       		.byte	0x3
+ 731 0283 FD       		.byte	0xfd
+ 732 0284 8E020000 		.4byte	0x28e
+ 733 0288 05       		.uleb128 0x5
+ 734 0289 03       		.byte	0x3
+ 735 028a 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_TABLE
+ 736 028e 0E       		.uleb128 0xe
+ 737 028f 6D020000 		.4byte	0x26d
+ 738 0293 0C       		.uleb128 0xc
+ 739 0294 01020000 		.4byte	0x201
+ 740 0298 A3020000 		.4byte	0x2a3
+ 741 029c 0D       		.uleb128 0xd
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 14
+
+
+ 742 029d 9C000000 		.4byte	0x9c
+ 743 02a1 02       		.byte	0x2
+ 744 02a2 00       		.byte	0
+ 745 02a3 10       		.uleb128 0x10
+ 746 02a4 16030000 		.4byte	.LASF38
+ 747 02a8 03       		.byte	0x3
+ 748 02a9 0701     		.2byte	0x107
+ 749 02ab B5020000 		.4byte	0x2b5
+ 750 02af 05       		.uleb128 0x5
+ 751 02b0 03       		.byte	0x3
+ 752 02b1 00000000 		.4byte	USBFS_DEVICE0_TABLE
+ 753 02b5 0E       		.uleb128 0xe
+ 754 02b6 93020000 		.4byte	0x293
+ 755 02ba 10       		.uleb128 0x10
+ 756 02bb D7000000 		.4byte	.LASF39
+ 757 02bf 03       		.byte	0x3
+ 758 02c0 0F01     		.2byte	0x10f
+ 759 02c2 CC020000 		.4byte	0x2cc
+ 760 02c6 05       		.uleb128 0x5
+ 761 02c7 03       		.byte	0x3
+ 762 02c8 00000000 		.4byte	USBFS_TABLE
+ 763 02cc 0E       		.uleb128 0xe
+ 764 02cd F1010000 		.4byte	0x1f1
+ 765 02d1 0C       		.uleb128 0xc
+ 766 02d2 B0010000 		.4byte	0x1b0
+ 767 02d6 E1020000 		.4byte	0x2e1
+ 768 02da 0D       		.uleb128 0xd
+ 769 02db 9C000000 		.4byte	0x9c
+ 770 02df 09       		.byte	0x9
+ 771 02e0 00       		.byte	0
+ 772 02e1 0F       		.uleb128 0xf
+ 773 02e2 2A010000 		.4byte	.LASF40
+ 774 02e6 03       		.byte	0x3
+ 775 02e7 8F       		.byte	0x8f
+ 776 02e8 F2020000 		.4byte	0x2f2
+ 777 02ec 05       		.uleb128 0x5
+ 778 02ed 03       		.byte	0x3
+ 779 02ee 00000000 		.4byte	USBFS_SN_STRING_DESCRIPTOR
+ 780 02f2 0E       		.uleb128 0xe
+ 781 02f3 D1020000 		.4byte	0x2d1
+ 782 02f7 0C       		.uleb128 0xc
+ 783 02f8 B0010000 		.4byte	0x1b0
+ 784 02fc 07030000 		.4byte	0x307
+ 785 0300 0D       		.uleb128 0xd
+ 786 0301 9C000000 		.4byte	0x9c
+ 787 0305 52       		.byte	0x52
+ 788 0306 00       		.byte	0
+ 789 0307 0F       		.uleb128 0xf
+ 790 0308 22020000 		.4byte	.LASF41
+ 791 030c 03       		.byte	0x3
+ 792 030d 6E       		.byte	0x6e
+ 793 030e 18030000 		.4byte	0x318
+ 794 0312 05       		.uleb128 0x5
+ 795 0313 03       		.byte	0x3
+ 796 0314 00000000 		.4byte	USBFS_STRING_DESCRIPTORS
+ 797 0318 0E       		.uleb128 0xe
+ 798 0319 F7020000 		.4byte	0x2f7
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 15
+
+
+ 799 031d 0F       		.uleb128 0xf
+ 800 031e 5A050000 		.4byte	.LASF42
+ 801 0322 03       		.byte	0x3
+ 802 0323 B6       		.byte	0xb6
+ 803 0324 20010000 		.4byte	0x120
+ 804 0328 05       		.uleb128 0x5
+ 805 0329 03       		.byte	0x3
+ 806 032a 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB
+ 807 032e 0C       		.uleb128 0xc
+ 808 032f 63000000 		.4byte	0x63
+ 809 0333 3E030000 		.4byte	0x33e
+ 810 0337 0D       		.uleb128 0xd
+ 811 0338 9C000000 		.4byte	0x9c
+ 812 033c 40       		.byte	0x40
+ 813 033d 00       		.byte	0
+ 814 033e 0F       		.uleb128 0xf
+ 815 033f 45010000 		.4byte	.LASF43
+ 816 0343 03       		.byte	0x3
+ 817 0344 B7       		.byte	0xb7
+ 818 0345 2E030000 		.4byte	0x32e
+ 819 0349 05       		.uleb128 0x5
+ 820 034a 03       		.byte	0x3
+ 821 034b 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF
+ 822 034f 0F       		.uleb128 0xf
+ 823 0350 2A030000 		.4byte	.LASF44
+ 824 0354 03       		.byte	0x3
+ 825 0355 C5       		.byte	0xc5
+ 826 0356 20010000 		.4byte	0x120
+ 827 035a 05       		.uleb128 0x5
+ 828 035b 03       		.byte	0x3
+ 829 035c 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_SCB
+ 830 0360 0F       		.uleb128 0xf
+ 831 0361 E3010000 		.4byte	.LASF45
+ 832 0365 03       		.byte	0x3
+ 833 0366 C6       		.byte	0xc6
+ 834 0367 2E030000 		.4byte	0x32e
+ 835 036b 05       		.uleb128 0x5
+ 836 036c 03       		.byte	0x3
+ 837 036d 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF
+ 838 0371 0C       		.uleb128 0xc
+ 839 0372 B0010000 		.4byte	0x1b0
+ 840 0376 81030000 		.4byte	0x381
+ 841 037a 0D       		.uleb128 0xd
+ 842 037b 9C000000 		.4byte	0x9c
+ 843 037f 27       		.byte	0x27
+ 844 0380 00       		.byte	0
+ 845 0381 0F       		.uleb128 0xf
+ 846 0382 E7040000 		.4byte	.LASF46
+ 847 0386 03       		.byte	0x3
+ 848 0387 98       		.byte	0x98
+ 849 0388 92030000 		.4byte	0x392
+ 850 038c 05       		.uleb128 0x5
+ 851 038d 03       		.byte	0x3
+ 852 038e 00000000 		.4byte	USBFS_HIDREPORT_DESCRIPTOR1
+ 853 0392 0E       		.uleb128 0xe
+ 854 0393 71030000 		.4byte	0x371
+ 855 0397 0C       		.uleb128 0xc
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 16
+
+
+ 856 0398 A7030000 		.4byte	0x3a7
+ 857 039c A7030000 		.4byte	0x3a7
+ 858 03a0 0D       		.uleb128 0xd
+ 859 03a1 9C000000 		.4byte	0x9c
+ 860 03a5 00       		.byte	0
+ 861 03a6 00       		.byte	0
+ 862 03a7 0E       		.uleb128 0xe
+ 863 03a8 64010000 		.4byte	0x164
+ 864 03ac 0F       		.uleb128 0xf
+ 865 03ad 93000000 		.4byte	.LASF47
+ 866 03b1 03       		.byte	0x3
+ 867 03b2 BD       		.byte	0xbd
+ 868 03b3 BD030000 		.4byte	0x3bd
+ 869 03b7 05       		.uleb128 0x5
+ 870 03b8 03       		.byte	0x3
+ 871 03b9 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE
+ 872 03bd 0E       		.uleb128 0xe
+ 873 03be 97030000 		.4byte	0x397
+ 874 03c2 0F       		.uleb128 0xf
+ 875 03c3 4E000000 		.4byte	.LASF48
+ 876 03c7 03       		.byte	0x3
+ 877 03c8 CC       		.byte	0xcc
+ 878 03c9 D3030000 		.4byte	0x3d3
+ 879 03cd 05       		.uleb128 0x5
+ 880 03ce 03       		.byte	0x3
+ 881 03cf 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE
+ 882 03d3 0E       		.uleb128 0xe
+ 883 03d4 97030000 		.4byte	0x397
+ 884 03d8 0C       		.uleb128 0xc
+ 885 03d9 01020000 		.4byte	0x201
+ 886 03dd E8030000 		.4byte	0x3e8
+ 887 03e1 0D       		.uleb128 0xd
+ 888 03e2 9C000000 		.4byte	0x9c
+ 889 03e6 04       		.byte	0x4
+ 890 03e7 00       		.byte	0
+ 891 03e8 0F       		.uleb128 0xf
+ 892 03e9 6D030000 		.4byte	.LASF49
+ 893 03ed 03       		.byte	0x3
+ 894 03ee D9       		.byte	0xd9
+ 895 03ef F9030000 		.4byte	0x3f9
+ 896 03f3 05       		.uleb128 0x5
+ 897 03f4 03       		.byte	0x3
+ 898 03f5 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE
+ 899 03f9 0E       		.uleb128 0xe
+ 900 03fa D8030000 		.4byte	0x3d8
+ 901 03fe 10       		.uleb128 0x10
+ 902 03ff BC040000 		.4byte	.LASF50
+ 903 0403 03       		.byte	0x3
+ 904 0404 1F01     		.2byte	0x11f
+ 905 0406 10040000 		.4byte	0x410
+ 906 040a 05       		.uleb128 0x5
+ 907 040b 03       		.byte	0x3
+ 908 040c 00000000 		.4byte	USBFS_MSOS_DESCRIPTOR
+ 909 0410 0E       		.uleb128 0xe
+ 910 0411 A0010000 		.4byte	0x1a0
+ 911 0415 10       		.uleb128 0x10
+ 912 0416 03050000 		.4byte	.LASF51
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 17
+
+
+ 913 041a 03       		.byte	0x3
+ 914 041b 2A01     		.2byte	0x12a
+ 915 041d 27040000 		.4byte	0x427
+ 916 0421 05       		.uleb128 0x5
+ 917 0422 03       		.byte	0x3
+ 918 0423 00000000 		.4byte	USBFS_MSOS_CONFIGURATION_DESCR
+ 919 0427 0E       		.uleb128 0xe
+ 920 0428 71030000 		.4byte	0x371
+ 921 042c 00       		.byte	0
+ 922              		.section	.debug_abbrev,"",%progbits
+ 923              	.Ldebug_abbrev0:
+ 924 0000 01       		.uleb128 0x1
+ 925 0001 11       		.uleb128 0x11
+ 926 0002 01       		.byte	0x1
+ 927 0003 25       		.uleb128 0x25
+ 928 0004 0E       		.uleb128 0xe
+ 929 0005 13       		.uleb128 0x13
+ 930 0006 0B       		.uleb128 0xb
+ 931 0007 03       		.uleb128 0x3
+ 932 0008 0E       		.uleb128 0xe
+ 933 0009 1B       		.uleb128 0x1b
+ 934 000a 0E       		.uleb128 0xe
+ 935 000b 10       		.uleb128 0x10
+ 936 000c 17       		.uleb128 0x17
+ 937 000d 00       		.byte	0
+ 938 000e 00       		.byte	0
+ 939 000f 02       		.uleb128 0x2
+ 940 0010 24       		.uleb128 0x24
+ 941 0011 00       		.byte	0
+ 942 0012 0B       		.uleb128 0xb
+ 943 0013 0B       		.uleb128 0xb
+ 944 0014 3E       		.uleb128 0x3e
+ 945 0015 0B       		.uleb128 0xb
+ 946 0016 03       		.uleb128 0x3
+ 947 0017 0E       		.uleb128 0xe
+ 948 0018 00       		.byte	0
+ 949 0019 00       		.byte	0
+ 950 001a 03       		.uleb128 0x3
+ 951 001b 24       		.uleb128 0x24
+ 952 001c 00       		.byte	0
+ 953 001d 0B       		.uleb128 0xb
+ 954 001e 0B       		.uleb128 0xb
+ 955 001f 3E       		.uleb128 0x3e
+ 956 0020 0B       		.uleb128 0xb
+ 957 0021 03       		.uleb128 0x3
+ 958 0022 08       		.uleb128 0x8
+ 959 0023 00       		.byte	0
+ 960 0024 00       		.byte	0
+ 961 0025 04       		.uleb128 0x4
+ 962 0026 16       		.uleb128 0x16
+ 963 0027 00       		.byte	0
+ 964 0028 03       		.uleb128 0x3
+ 965 0029 0E       		.uleb128 0xe
+ 966 002a 3A       		.uleb128 0x3a
+ 967 002b 0B       		.uleb128 0xb
+ 968 002c 3B       		.uleb128 0x3b
+ 969 002d 05       		.uleb128 0x5
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 18
+
+
+ 970 002e 49       		.uleb128 0x49
+ 971 002f 13       		.uleb128 0x13
+ 972 0030 00       		.byte	0
+ 973 0031 00       		.byte	0
+ 974 0032 05       		.uleb128 0x5
+ 975 0033 35       		.uleb128 0x35
+ 976 0034 00       		.byte	0
+ 977 0035 49       		.uleb128 0x49
+ 978 0036 13       		.uleb128 0x13
+ 979 0037 00       		.byte	0
+ 980 0038 00       		.byte	0
+ 981 0039 06       		.uleb128 0x6
+ 982 003a 13       		.uleb128 0x13
+ 983 003b 01       		.byte	0x1
+ 984 003c 0B       		.uleb128 0xb
+ 985 003d 0B       		.uleb128 0xb
+ 986 003e 3A       		.uleb128 0x3a
+ 987 003f 0B       		.uleb128 0xb
+ 988 0040 3B       		.uleb128 0x3b
+ 989 0041 0B       		.uleb128 0xb
+ 990 0042 01       		.uleb128 0x1
+ 991 0043 13       		.uleb128 0x13
+ 992 0044 00       		.byte	0
+ 993 0045 00       		.byte	0
+ 994 0046 07       		.uleb128 0x7
+ 995 0047 0D       		.uleb128 0xd
+ 996 0048 00       		.byte	0
+ 997 0049 03       		.uleb128 0x3
+ 998 004a 0E       		.uleb128 0xe
+ 999 004b 3A       		.uleb128 0x3a
+ 1000 004c 0B       		.uleb128 0xb
+ 1001 004d 3B       		.uleb128 0x3b
+ 1002 004e 0B       		.uleb128 0xb
+ 1003 004f 49       		.uleb128 0x49
+ 1004 0050 13       		.uleb128 0x13
+ 1005 0051 38       		.uleb128 0x38
+ 1006 0052 0B       		.uleb128 0xb
+ 1007 0053 00       		.byte	0
+ 1008 0054 00       		.byte	0
+ 1009 0055 08       		.uleb128 0x8
+ 1010 0056 16       		.uleb128 0x16
+ 1011 0057 00       		.byte	0
+ 1012 0058 03       		.uleb128 0x3
+ 1013 0059 0E       		.uleb128 0xe
+ 1014 005a 3A       		.uleb128 0x3a
+ 1015 005b 0B       		.uleb128 0xb
+ 1016 005c 3B       		.uleb128 0x3b
+ 1017 005d 0B       		.uleb128 0xb
+ 1018 005e 49       		.uleb128 0x49
+ 1019 005f 13       		.uleb128 0x13
+ 1020 0060 00       		.byte	0
+ 1021 0061 00       		.byte	0
+ 1022 0062 09       		.uleb128 0x9
+ 1023 0063 0F       		.uleb128 0xf
+ 1024 0064 00       		.byte	0
+ 1025 0065 0B       		.uleb128 0xb
+ 1026 0066 0B       		.uleb128 0xb
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 19
+
+
+ 1027 0067 49       		.uleb128 0x49
+ 1028 0068 13       		.uleb128 0x13
+ 1029 0069 00       		.byte	0
+ 1030 006a 00       		.byte	0
+ 1031 006b 0A       		.uleb128 0xa
+ 1032 006c 0D       		.uleb128 0xd
+ 1033 006d 00       		.byte	0
+ 1034 006e 03       		.uleb128 0x3
+ 1035 006f 08       		.uleb128 0x8
+ 1036 0070 3A       		.uleb128 0x3a
+ 1037 0071 0B       		.uleb128 0xb
+ 1038 0072 3B       		.uleb128 0x3b
+ 1039 0073 0B       		.uleb128 0xb
+ 1040 0074 49       		.uleb128 0x49
+ 1041 0075 13       		.uleb128 0x13
+ 1042 0076 38       		.uleb128 0x38
+ 1043 0077 0B       		.uleb128 0xb
+ 1044 0078 00       		.byte	0
+ 1045 0079 00       		.byte	0
+ 1046 007a 0B       		.uleb128 0xb
+ 1047 007b 26       		.uleb128 0x26
+ 1048 007c 00       		.byte	0
+ 1049 007d 00       		.byte	0
+ 1050 007e 00       		.byte	0
+ 1051 007f 0C       		.uleb128 0xc
+ 1052 0080 01       		.uleb128 0x1
+ 1053 0081 01       		.byte	0x1
+ 1054 0082 49       		.uleb128 0x49
+ 1055 0083 13       		.uleb128 0x13
+ 1056 0084 01       		.uleb128 0x1
+ 1057 0085 13       		.uleb128 0x13
+ 1058 0086 00       		.byte	0
+ 1059 0087 00       		.byte	0
+ 1060 0088 0D       		.uleb128 0xd
+ 1061 0089 21       		.uleb128 0x21
+ 1062 008a 00       		.byte	0
+ 1063 008b 49       		.uleb128 0x49
+ 1064 008c 13       		.uleb128 0x13
+ 1065 008d 2F       		.uleb128 0x2f
+ 1066 008e 0B       		.uleb128 0xb
+ 1067 008f 00       		.byte	0
+ 1068 0090 00       		.byte	0
+ 1069 0091 0E       		.uleb128 0xe
+ 1070 0092 26       		.uleb128 0x26
+ 1071 0093 00       		.byte	0
+ 1072 0094 49       		.uleb128 0x49
+ 1073 0095 13       		.uleb128 0x13
+ 1074 0096 00       		.byte	0
+ 1075 0097 00       		.byte	0
+ 1076 0098 0F       		.uleb128 0xf
+ 1077 0099 34       		.uleb128 0x34
+ 1078 009a 00       		.byte	0
+ 1079 009b 03       		.uleb128 0x3
+ 1080 009c 0E       		.uleb128 0xe
+ 1081 009d 3A       		.uleb128 0x3a
+ 1082 009e 0B       		.uleb128 0xb
+ 1083 009f 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 20
+
+
+ 1084 00a0 0B       		.uleb128 0xb
+ 1085 00a1 49       		.uleb128 0x49
+ 1086 00a2 13       		.uleb128 0x13
+ 1087 00a3 3F       		.uleb128 0x3f
+ 1088 00a4 19       		.uleb128 0x19
+ 1089 00a5 02       		.uleb128 0x2
+ 1090 00a6 18       		.uleb128 0x18
+ 1091 00a7 00       		.byte	0
+ 1092 00a8 00       		.byte	0
+ 1093 00a9 10       		.uleb128 0x10
+ 1094 00aa 34       		.uleb128 0x34
+ 1095 00ab 00       		.byte	0
+ 1096 00ac 03       		.uleb128 0x3
+ 1097 00ad 0E       		.uleb128 0xe
+ 1098 00ae 3A       		.uleb128 0x3a
+ 1099 00af 0B       		.uleb128 0xb
+ 1100 00b0 3B       		.uleb128 0x3b
+ 1101 00b1 05       		.uleb128 0x5
+ 1102 00b2 49       		.uleb128 0x49
+ 1103 00b3 13       		.uleb128 0x13
+ 1104 00b4 3F       		.uleb128 0x3f
+ 1105 00b5 19       		.uleb128 0x19
+ 1106 00b6 02       		.uleb128 0x2
+ 1107 00b7 18       		.uleb128 0x18
+ 1108 00b8 00       		.byte	0
+ 1109 00b9 00       		.byte	0
+ 1110 00ba 00       		.byte	0
+ 1111              		.section	.debug_aranges,"",%progbits
+ 1112 0000 14000000 		.4byte	0x14
+ 1113 0004 0200     		.2byte	0x2
+ 1114 0006 00000000 		.4byte	.Ldebug_info0
+ 1115 000a 04       		.byte	0x4
+ 1116 000b 00       		.byte	0
+ 1117 000c 0000     		.2byte	0
+ 1118 000e 0000     		.2byte	0
+ 1119 0010 00000000 		.4byte	0
+ 1120 0014 00000000 		.4byte	0
+ 1121              		.section	.debug_line,"",%progbits
+ 1122              	.Ldebug_line0:
+ 1123 0000 59000000 		.section	.debug_str,"MS",%progbits,1
+ 1123      02005300 
+ 1123      00000201 
+ 1123      FB0E0D00 
+ 1123      01010101 
+ 1124              	.LASF32:
+ 1125 0000 55534246 		.ascii	"USBFS_DEVICE0_DESCR\000"
+ 1125      535F4445 
+ 1125      56494345 
+ 1125      305F4445 
+ 1125      53435200 
+ 1126              	.LASF28:
+ 1127 0014 70537461 		.ascii	"pStatusBlock\000"
+ 1127      74757342 
+ 1127      6C6F636B 
+ 1127      00
+ 1128              	.LASF36:
+ 1129 0021 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS\000"
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 21
+
+
+ 1129      535F4445 
+ 1129      56494345 
+ 1129      305F434F 
+ 1129      4E464947 
+ 1130              	.LASF48:
+ 1131 004e 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_"
+ 1131      535F4445 
+ 1131      56494345 
+ 1131      305F434F 
+ 1131      4E464947 
+ 1132 0081 4849445F 		.ascii	"HID_OUT_RPT_TABLE\000"
+ 1132      4F55545F 
+ 1132      5250545F 
+ 1132      5441424C 
+ 1132      4500
+ 1133              	.LASF47:
+ 1134 0093 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_"
+ 1134      535F4445 
+ 1134      56494345 
+ 1134      305F434F 
+ 1134      4E464947 
+ 1135 00c6 4849445F 		.ascii	"HID_IN_RPT_TABLE\000"
+ 1135      494E5F52 
+ 1135      50545F54 
+ 1135      41424C45 
+ 1135      00
+ 1136              	.LASF39:
+ 1137 00d7 55534246 		.ascii	"USBFS_TABLE\000"
+ 1137      535F5441 
+ 1137      424C4500 
+ 1138              	.LASF26:
+ 1139 00e3 636F756E 		.ascii	"count\000"
+ 1139      7400
+ 1140              	.LASF34:
+ 1141 00e9 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE\000"
+ 1141      535F4445 
+ 1141      56494345 
+ 1141      305F434F 
+ 1141      4E464947 
+ 1142              	.LASF3:
+ 1143 0117 73686F72 		.ascii	"short unsigned int\000"
+ 1143      7420756E 
+ 1143      7369676E 
+ 1143      65642069 
+ 1143      6E7400
+ 1144              	.LASF40:
+ 1145 012a 55534246 		.ascii	"USBFS_SN_STRING_DESCRIPTOR\000"
+ 1145      535F534E 
+ 1145      5F535452 
+ 1145      494E475F 
+ 1145      44455343 
+ 1146              	.LASF43:
+ 1147 0145 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_"
+ 1147      535F4445 
+ 1147      56494345 
+ 1147      305F434F 
+ 1147      4E464947 
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 22
+
+
+ 1148 0178 4849445F 		.ascii	"HID_IN_BUF\000"
+ 1148      494E5F42 
+ 1148      554600
+ 1149              	.LASF54:
+ 1150 0183 5C5C7361 		.ascii	"\\\\sauron\\wormley\\shared\\git\\local\\FluxEngine"
+ 1150      75726F6E 
+ 1150      5C776F72 
+ 1150      6D6C6579 
+ 1150      5C736861 
+ 1151 01af 5F426F6F 		.ascii	"_Bootloader.cydsn\000"
+ 1151      746C6F61 
+ 1151      6465722E 
+ 1151      63796473 
+ 1151      6E00
+ 1152              	.LASF27:
+ 1153 01c1 70446174 		.ascii	"pData\000"
+ 1153      6100
+ 1154              	.LASF17:
+ 1155 01c7 616C7453 		.ascii	"altSetting\000"
+ 1155      65747469 
+ 1155      6E6700
+ 1156              	.LASF29:
+ 1157 01d2 545F5553 		.ascii	"T_USBFS_TD\000"
+ 1157      4246535F 
+ 1157      544400
+ 1158              	.LASF11:
+ 1159 01dd 666C6F61 		.ascii	"float\000"
+ 1159      7400
+ 1160              	.LASF45:
+ 1161 01e3 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_"
+ 1161      535F4445 
+ 1161      56494345 
+ 1161      305F434F 
+ 1161      4E464947 
+ 1162 0216 4849445F 		.ascii	"HID_OUT_BUF\000"
+ 1162      4F55545F 
+ 1162      42554600 
+ 1163              	.LASF41:
+ 1164 0222 55534246 		.ascii	"USBFS_STRING_DESCRIPTORS\000"
+ 1164      535F5354 
+ 1164      52494E47 
+ 1164      5F444553 
+ 1164      43524950 
+ 1165              	.LASF52:
+ 1166 023b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1166      43313120 
+ 1166      352E342E 
+ 1166      31203230 
+ 1166      31363036 
+ 1167 026e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1167      20726576 
+ 1167      6973696F 
+ 1167      6E203233 
+ 1167      37373135 
+ 1168 02a1 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1168      66756E63 
+ 1168      74696F6E 
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 23
+
+
+ 1168      2D736563 
+ 1168      74696F6E 
+ 1169              	.LASF19:
+ 1170 02c9 61747472 		.ascii	"attributes\000"
+ 1170      69627574 
+ 1170      657300
+ 1171              	.LASF25:
+ 1172 02d4 545F5553 		.ascii	"T_USBFS_XFER_STATUS_BLOCK\000"
+ 1172      4246535F 
+ 1172      58464552 
+ 1172      5F535441 
+ 1172      5455535F 
+ 1173              	.LASF37:
+ 1174 02ee 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_TABLE\000"
+ 1174      535F4445 
+ 1174      56494345 
+ 1174      305F434F 
+ 1174      4E464947 
+ 1175              	.LASF18:
+ 1176 0311 61646472 		.ascii	"addr\000"
+ 1176      00
+ 1177              	.LASF38:
+ 1178 0316 55534246 		.ascii	"USBFS_DEVICE0_TABLE\000"
+ 1178      535F4445 
+ 1178      56494345 
+ 1178      305F5441 
+ 1178      424C4500 
+ 1179              	.LASF44:
+ 1180 032a 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_"
+ 1180      535F4445 
+ 1180      56494345 
+ 1180      305F434F 
+ 1180      4E464947 
+ 1181 035d 4849445F 		.ascii	"HID_OUT_RPT_SCB\000"
+ 1181      4F55545F 
+ 1181      5250545F 
+ 1181      53434200 
+ 1182              	.LASF49:
+ 1183 036d 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_"
+ 1183      535F4445 
+ 1183      56494345 
+ 1183      305F434F 
+ 1183      4E464947 
+ 1184 03a0 4849445F 		.ascii	"HID_TABLE\000"
+ 1184      5441424C 
+ 1184      4500
+ 1185              	.LASF12:
+ 1186 03aa 646F7562 		.ascii	"double\000"
+ 1186      6C6500
+ 1187              	.LASF10:
+ 1188 03b1 75696E74 		.ascii	"uint16\000"
+ 1188      313600
+ 1189              	.LASF35:
+ 1190 03b8 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE\000"
+ 1190      535F4445 
+ 1190      56494345 
+ 1190      305F434F 
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 24
+
+
+ 1190      4E464947 
+ 1191              	.LASF33:
+ 1192 03e7 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_DESCR\000"
+ 1192      535F4445 
+ 1192      56494345 
+ 1192      305F434F 
+ 1192      4E464947 
+ 1193              	.LASF5:
+ 1194 040a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1194      20756E73 
+ 1194      69676E65 
+ 1194      6420696E 
+ 1194      7400
+ 1195              	.LASF8:
+ 1196 041c 756E7369 		.ascii	"unsigned int\000"
+ 1196      676E6564 
+ 1196      20696E74 
+ 1196      00
+ 1197              	.LASF7:
+ 1198 0429 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1198      206C6F6E 
+ 1198      6720756E 
+ 1198      7369676E 
+ 1198      65642069 
+ 1199              	.LASF53:
+ 1200 0440 47656E65 		.ascii	"Generated_Source\\PSoC5\\USBFS_descr.c\000"
+ 1200      72617465 
+ 1200      645F536F 
+ 1200      75726365 
+ 1200      5C50536F 
+ 1201              	.LASF30:
+ 1202 0465 705F6C69 		.ascii	"p_list\000"
+ 1202      737400
+ 1203              	.LASF22:
+ 1204 046c 545F5553 		.ascii	"T_USBFS_EP_SETTINGS_BLOCK\000"
+ 1204      4246535F 
+ 1204      45505F53 
+ 1204      45545449 
+ 1204      4E47535F 
+ 1205              	.LASF1:
+ 1206 0486 756E7369 		.ascii	"unsigned char\000"
+ 1206      676E6564 
+ 1206      20636861 
+ 1206      7200
+ 1207              	.LASF15:
+ 1208 0494 73697A65 		.ascii	"sizetype\000"
+ 1208      74797065 
+ 1208      00
+ 1209              	.LASF6:
+ 1210 049d 6C6F6E67 		.ascii	"long long int\000"
+ 1210      206C6F6E 
+ 1210      6720696E 
+ 1210      7400
+ 1211              	.LASF31:
+ 1212 04ab 545F5553 		.ascii	"T_USBFS_LUT\000"
+ 1212      4246535F 
+ 1212      4C555400 
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 25
+
+
+ 1213              	.LASF13:
+ 1214 04b7 63686172 		.ascii	"char\000"
+ 1214      00
+ 1215              	.LASF50:
+ 1216 04bc 55534246 		.ascii	"USBFS_MSOS_DESCRIPTOR\000"
+ 1216      535F4D53 
+ 1216      4F535F44 
+ 1216      45534352 
+ 1216      4950544F 
+ 1217              	.LASF20:
+ 1218 04d2 62756666 		.ascii	"bufferSize\000"
+ 1218      65725369 
+ 1218      7A6500
+ 1219              	.LASF2:
+ 1220 04dd 73686F72 		.ascii	"short int\000"
+ 1220      7420696E 
+ 1220      7400
+ 1221              	.LASF46:
+ 1222 04e7 55534246 		.ascii	"USBFS_HIDREPORT_DESCRIPTOR1\000"
+ 1222      535F4849 
+ 1222      44524550 
+ 1222      4F52545F 
+ 1222      44455343 
+ 1223              	.LASF51:
+ 1224 0503 55534246 		.ascii	"USBFS_MSOS_CONFIGURATION_DESCR\000"
+ 1224      535F4D53 
+ 1224      4F535F43 
+ 1224      4F4E4649 
+ 1224      47555241 
+ 1225              	.LASF9:
+ 1226 0522 75696E74 		.ascii	"uint8\000"
+ 1226      3800
+ 1227              	.LASF16:
+ 1228 0528 696E7465 		.ascii	"interface\000"
+ 1228      72666163 
+ 1228      6500
+ 1229              	.LASF4:
+ 1230 0532 6C6F6E67 		.ascii	"long int\000"
+ 1230      20696E74 
+ 1230      00
+ 1231              	.LASF23:
+ 1232 053b 73746174 		.ascii	"status\000"
+ 1232      757300
+ 1233              	.LASF14:
+ 1234 0542 6C6F6E67 		.ascii	"long double\000"
+ 1234      20646F75 
+ 1234      626C6500 
+ 1235              	.LASF0:
+ 1236 054e 7369676E 		.ascii	"signed char\000"
+ 1236      65642063 
+ 1236      68617200 
+ 1237              	.LASF42:
+ 1238 055a 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_"
+ 1238      535F4445 
+ 1238      56494345 
+ 1238      305F434F 
+ 1238      4E464947 
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\cclphqhs.s 			page 26
+
+
+ 1239 058d 4849445F 		.ascii	"HID_IN_RPT_SCB\000"
+ 1239      494E5F52 
+ 1239      50545F53 
+ 1239      434200
+ 1240              	.LASF24:
+ 1241 059c 6C656E67 		.ascii	"length\000"
+ 1241      746800
+ 1242              	.LASF21:
+ 1243 05a3 624D6973 		.ascii	"bMisc\000"
+ 1243      6300
+ 1244              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -1,0 +1,608 @@
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB63:
+  27              		.file 1 "main.c"
+   1:main.c        **** /*****************************************************************************
+   2:main.c        **** * File Name: main.c
+   3:main.c        **** *
+   4:main.c        **** * Version: 3.0
+   5:main.c        **** *
+   6:main.c        **** * Description:
+   7:main.c        **** *   The main C file for the USB HID Bootloader for PSoC 5LP associated with 
+   8:main.c        **** *   CE95391.
+   9:main.c        **** *
+  10:main.c        **** *	Checks for the bootloader run type and launches the bootloader accordingly.
+  11:main.c        **** *
+  12:main.c        **** ******************************************************************************
+  13:main.c        **** * Copyright (C) 2016, Cypress Semiconductor Corporation.
+  14:main.c        **** ******************************************************************************
+  15:main.c        **** * This software is owned by Cypress Semiconductor Corporation (Cypress) and is
+  16:main.c        **** * protected by and subject to worldwide patent protection (United States and
+  17:main.c        **** * foreign), United States copyright laws and international treaty provisions.
+  18:main.c        **** * Cypress hereby grants to licensee a personal, non-exclusive, non-transferable
+  19:main.c        **** * license to copy, use, modify, create derivative works of, and compile the
+  20:main.c        **** * Cypress Source Code and derivative works for the sole purpose of creating
+  21:main.c        **** * custom software in support of licensee product to be used only in conjunction
+  22:main.c        **** * with a Cypress integrated circuit as specified in the applicable agreement.
+  23:main.c        **** * Any reproduction, modification, translation, compilation, or representation of
+  24:main.c        **** * this software except as specified above is prohibited without the express
+  25:main.c        **** * written permission of Cypress.
+  26:main.c        **** *
+  27:main.c        **** * Disclaimer: CYPRESS MAKES NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH
+  28:main.c        **** * REGARD TO THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  29:main.c        **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  30:main.c        **** * Cypress reserves the right to make changes without further notice to the
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 2
+
+
+  31:main.c        **** * materials described herein. Cypress does not assume any liability arising out
+  32:main.c        **** * of the application or use of any product or circuit described herein. Cypress
+  33:main.c        **** * does not authorize its products for use as critical components in life-support
+  34:main.c        **** * systems where a malfunction or failure may reasonably be expected to result in
+  35:main.c        **** * significant injury to the user. The inclusion of Cypress' product in a life-
+  36:main.c        **** * support systems application implies that the manufacturer assumes all risk of
+  37:main.c        **** * such use and in doing so indemnifies Cypress against all charges. Use may be
+  38:main.c        **** * limited by and subject to the applicable Cypress software license agreement.
+  39:main.c        **** *****************************************************************************/
+  40:main.c        **** #include <project.h>
+  41:main.c        **** 
+  42:main.c        **** 
+  43:main.c        **** int main()
+  44:main.c        **** {
+  28              		.loc 1 44 0
+  29              		.cfi_startproc
+  30              		@ Volatile: function does not return.
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+  45:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  46:main.c        ****     /* Turn on LED to indicate that the state is a bootloader */
+  47:main.c        ****     
+  48:main.c        **** 	/* Check to see if we should only run bootloader, or eventually move to the bootloadable code.
+  49:main.c        **** 	   The bootloader uses the macro BL_GET_RUN_TYPE to decide how to proceed.  
+  50:main.c        **** 	   If the switch is held down the user wants the bootloader to wait for a start command.
+  51:main.c        ****        Refer to the Bootloader Componet datasheet for more information.
+  52:main.c        ****     */
+  53:main.c        ****     PWM_1_Start();
+  37              		.loc 1 53 0
+  38 0002 FFF7FEFF 		bl	PWM_1_Start
+  39              	.LVL0:
+  54:main.c        **** 	if((Wait_Forever_Read() == 0/*Pressed*/) || (BL_GET_RUN_TYPE == BL_START_BTLDR))
+  40              		.loc 1 54 0
+  41 0006 FFF7FEFF 		bl	Wait_Forever_Read
+  42              	.LVL1:
+  43 000a 28B1     		cbz	r0, .L2
+  44              		.loc 1 54 0 is_stmt 0 discriminator 1
+  45 000c 054B     		ldr	r3, .L6
+  46 000e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  47 0010 03F0C003 		and	r3, r3, #192
+  48 0014 402B     		cmp	r3, #64
+  49 0016 02D1     		bne	.L3
+  50              	.L2:
+  55:main.c        **** 	{	
+  56:main.c        **** 		BL_SET_RUN_TYPE(BL_START_BTLDR);
+  51              		.loc 1 56 0 is_stmt 1
+  52 0018 4022     		movs	r2, #64
+  53 001a 024B     		ldr	r3, .L6
+  54 001c 1A70     		strb	r2, [r3]
+  55              	.L3:
+  57:main.c        **** 	}
+  58:main.c        **** 
+  59:main.c        **** 	/* Start Bootloader - we never return from this function */
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 3
+
+
+  60:main.c        **** 	BL_Start();
+  56              		.loc 1 60 0
+  57 001e FFF7FEFF 		bl	BL_Start
+  58              	.LVL2:
+  59              	.L4:
+  60 0022 FEE7     		b	.L4
+  61              	.L7:
+  62              		.align	2
+  63              	.L6:
+  64 0024 FA460040 		.word	1073759994
+  65              		.cfi_endproc
+  66              	.LFE63:
+  67              		.size	main, .-main
+  68              		.text
+  69              	.Letext0:
+  70              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  71              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  72              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+  73              		.file 5 "Generated_Source\\PSoC5/PWM_1.h"
+  74              		.file 6 "Generated_Source\\PSoC5/Wait_Forever.h"
+  75              		.file 7 "Generated_Source\\PSoC5/BL.h"
+  76              		.file 8 "Generated_Source\\PSoC5/core_cm3.h"
+  77              		.section	.debug_info,"",%progbits
+  78              	.Ldebug_info0:
+  79 0000 25010000 		.4byte	0x125
+  80 0004 0400     		.2byte	0x4
+  81 0006 00000000 		.4byte	.Ldebug_abbrev0
+  82 000a 04       		.byte	0x4
+  83 000b 01       		.uleb128 0x1
+  84 000c 96000000 		.4byte	.LASF21
+  85 0010 0C       		.byte	0xc
+  86 0011 40000000 		.4byte	.LASF22
+  87 0015 58000000 		.4byte	.LASF23
+  88 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  89 001d 00000000 		.4byte	0
+  90 0021 00000000 		.4byte	.Ldebug_line0
+  91 0025 02       		.uleb128 0x2
+  92 0026 01       		.byte	0x1
+  93 0027 06       		.byte	0x6
+  94 0028 88010000 		.4byte	.LASF0
+  95 002c 02       		.uleb128 0x2
+  96 002d 01       		.byte	0x1
+  97 002e 08       		.byte	0x8
+  98 002f 53010000 		.4byte	.LASF1
+  99 0033 02       		.uleb128 0x2
+ 100 0034 02       		.byte	0x2
+ 101 0035 05       		.byte	0x5
+ 102 0036 B0010000 		.4byte	.LASF2
+ 103 003a 02       		.uleb128 0x2
+ 104 003b 02       		.byte	0x2
+ 105 003c 07       		.byte	0x7
+ 106 003d 0E000000 		.4byte	.LASF3
+ 107 0041 03       		.uleb128 0x3
+ 108 0042 A0010000 		.4byte	.LASF9
+ 109 0046 02       		.byte	0x2
+ 110 0047 3F       		.byte	0x3f
+ 111 0048 4C000000 		.4byte	0x4c
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 4
+
+
+ 112 004c 02       		.uleb128 0x2
+ 113 004d 04       		.byte	0x4
+ 114 004e 05       		.byte	0x5
+ 115 004f 72010000 		.4byte	.LASF4
+ 116 0053 02       		.uleb128 0x2
+ 117 0054 04       		.byte	0x4
+ 118 0055 07       		.byte	0x7
+ 119 0056 2A010000 		.4byte	.LASF5
+ 120 005a 02       		.uleb128 0x2
+ 121 005b 08       		.byte	0x8
+ 122 005c 05       		.byte	0x5
+ 123 005d 00000000 		.4byte	.LASF6
+ 124 0061 02       		.uleb128 0x2
+ 125 0062 08       		.byte	0x8
+ 126 0063 07       		.byte	0x7
+ 127 0064 3C010000 		.4byte	.LASF7
+ 128 0068 04       		.uleb128 0x4
+ 129 0069 04       		.byte	0x4
+ 130 006a 05       		.byte	0x5
+ 131 006b 696E7400 		.ascii	"int\000"
+ 132 006f 02       		.uleb128 0x2
+ 133 0070 04       		.byte	0x4
+ 134 0071 07       		.byte	0x7
+ 135 0072 21000000 		.4byte	.LASF8
+ 136 0076 03       		.uleb128 0x3
+ 137 0077 BA010000 		.4byte	.LASF10
+ 138 007b 03       		.byte	0x3
+ 139 007c 2C       		.byte	0x2c
+ 140 007d 41000000 		.4byte	0x41
+ 141 0081 05       		.uleb128 0x5
+ 142 0082 24010000 		.4byte	.LASF11
+ 143 0086 04       		.byte	0x4
+ 144 0087 E901     		.2byte	0x1e9
+ 145 0089 2C000000 		.4byte	0x2c
+ 146 008d 02       		.uleb128 0x2
+ 147 008e 04       		.byte	0x4
+ 148 008f 04       		.byte	0x4
+ 149 0090 AA010000 		.4byte	.LASF12
+ 150 0094 02       		.uleb128 0x2
+ 151 0095 08       		.byte	0x8
+ 152 0096 04       		.byte	0x4
+ 153 0097 6B010000 		.4byte	.LASF13
+ 154 009b 02       		.uleb128 0x2
+ 155 009c 01       		.byte	0x1
+ 156 009d 08       		.byte	0x8
+ 157 009e 61010000 		.4byte	.LASF14
+ 158 00a2 05       		.uleb128 0x5
+ 159 00a3 66010000 		.4byte	.LASF15
+ 160 00a7 04       		.byte	0x4
+ 161 00a8 9302     		.2byte	0x293
+ 162 00aa AE000000 		.4byte	0xae
+ 163 00ae 06       		.uleb128 0x6
+ 164 00af 81000000 		.4byte	0x81
+ 165 00b3 02       		.uleb128 0x2
+ 166 00b4 08       		.byte	0x8
+ 167 00b5 04       		.byte	0x4
+ 168 00b6 94010000 		.4byte	.LASF16
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 5
+
+
+ 169 00ba 02       		.uleb128 0x2
+ 170 00bb 04       		.byte	0x4
+ 171 00bc 07       		.byte	0x7
+ 172 00bd CB010000 		.4byte	.LASF17
+ 173 00c1 07       		.uleb128 0x7
+ 174 00c2 47000000 		.4byte	.LASF24
+ 175 00c6 01       		.byte	0x1
+ 176 00c7 2B       		.byte	0x2b
+ 177 00c8 68000000 		.4byte	0x68
+ 178 00cc 00000000 		.4byte	.LFB63
+ 179 00d0 28000000 		.4byte	.LFE63-.LFB63
+ 180 00d4 01       		.uleb128 0x1
+ 181 00d5 9C       		.byte	0x9c
+ 182 00d6 F6000000 		.4byte	0xf6
+ 183 00da 08       		.uleb128 0x8
+ 184 00db 06000000 		.4byte	.LVL0
+ 185 00df 07010000 		.4byte	0x107
+ 186 00e3 08       		.uleb128 0x8
+ 187 00e4 0A000000 		.4byte	.LVL1
+ 188 00e8 12010000 		.4byte	0x112
+ 189 00ec 08       		.uleb128 0x8
+ 190 00ed 22000000 		.4byte	.LVL2
+ 191 00f1 1D010000 		.4byte	0x11d
+ 192 00f5 00       		.byte	0
+ 193 00f6 09       		.uleb128 0x9
+ 194 00f7 7B010000 		.4byte	.LASF25
+ 195 00fb 08       		.byte	0x8
+ 196 00fc 1207     		.2byte	0x712
+ 197 00fe 02010000 		.4byte	0x102
+ 198 0102 06       		.uleb128 0x6
+ 199 0103 76000000 		.4byte	0x76
+ 200 0107 0A       		.uleb128 0xa
+ 201 0108 4C000000 		.4byte	.LASF18
+ 202 010c 4C000000 		.4byte	.LASF18
+ 203 0110 05       		.byte	0x5
+ 204 0111 92       		.byte	0x92
+ 205 0112 0A       		.uleb128 0xa
+ 206 0113 2E000000 		.4byte	.LASF19
+ 207 0117 2E000000 		.4byte	.LASF19
+ 208 011b 06       		.byte	0x6
+ 209 011c 29       		.byte	0x29
+ 210 011d 0A       		.uleb128 0xa
+ 211 011e C2010000 		.4byte	.LASF20
+ 212 0122 C2010000 		.4byte	.LASF20
+ 213 0126 07       		.byte	0x7
+ 214 0127 E6       		.byte	0xe6
+ 215 0128 00       		.byte	0
+ 216              		.section	.debug_abbrev,"",%progbits
+ 217              	.Ldebug_abbrev0:
+ 218 0000 01       		.uleb128 0x1
+ 219 0001 11       		.uleb128 0x11
+ 220 0002 01       		.byte	0x1
+ 221 0003 25       		.uleb128 0x25
+ 222 0004 0E       		.uleb128 0xe
+ 223 0005 13       		.uleb128 0x13
+ 224 0006 0B       		.uleb128 0xb
+ 225 0007 03       		.uleb128 0x3
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 6
+
+
+ 226 0008 0E       		.uleb128 0xe
+ 227 0009 1B       		.uleb128 0x1b
+ 228 000a 0E       		.uleb128 0xe
+ 229 000b 55       		.uleb128 0x55
+ 230 000c 17       		.uleb128 0x17
+ 231 000d 11       		.uleb128 0x11
+ 232 000e 01       		.uleb128 0x1
+ 233 000f 10       		.uleb128 0x10
+ 234 0010 17       		.uleb128 0x17
+ 235 0011 00       		.byte	0
+ 236 0012 00       		.byte	0
+ 237 0013 02       		.uleb128 0x2
+ 238 0014 24       		.uleb128 0x24
+ 239 0015 00       		.byte	0
+ 240 0016 0B       		.uleb128 0xb
+ 241 0017 0B       		.uleb128 0xb
+ 242 0018 3E       		.uleb128 0x3e
+ 243 0019 0B       		.uleb128 0xb
+ 244 001a 03       		.uleb128 0x3
+ 245 001b 0E       		.uleb128 0xe
+ 246 001c 00       		.byte	0
+ 247 001d 00       		.byte	0
+ 248 001e 03       		.uleb128 0x3
+ 249 001f 16       		.uleb128 0x16
+ 250 0020 00       		.byte	0
+ 251 0021 03       		.uleb128 0x3
+ 252 0022 0E       		.uleb128 0xe
+ 253 0023 3A       		.uleb128 0x3a
+ 254 0024 0B       		.uleb128 0xb
+ 255 0025 3B       		.uleb128 0x3b
+ 256 0026 0B       		.uleb128 0xb
+ 257 0027 49       		.uleb128 0x49
+ 258 0028 13       		.uleb128 0x13
+ 259 0029 00       		.byte	0
+ 260 002a 00       		.byte	0
+ 261 002b 04       		.uleb128 0x4
+ 262 002c 24       		.uleb128 0x24
+ 263 002d 00       		.byte	0
+ 264 002e 0B       		.uleb128 0xb
+ 265 002f 0B       		.uleb128 0xb
+ 266 0030 3E       		.uleb128 0x3e
+ 267 0031 0B       		.uleb128 0xb
+ 268 0032 03       		.uleb128 0x3
+ 269 0033 08       		.uleb128 0x8
+ 270 0034 00       		.byte	0
+ 271 0035 00       		.byte	0
+ 272 0036 05       		.uleb128 0x5
+ 273 0037 16       		.uleb128 0x16
+ 274 0038 00       		.byte	0
+ 275 0039 03       		.uleb128 0x3
+ 276 003a 0E       		.uleb128 0xe
+ 277 003b 3A       		.uleb128 0x3a
+ 278 003c 0B       		.uleb128 0xb
+ 279 003d 3B       		.uleb128 0x3b
+ 280 003e 05       		.uleb128 0x5
+ 281 003f 49       		.uleb128 0x49
+ 282 0040 13       		.uleb128 0x13
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 7
+
+
+ 283 0041 00       		.byte	0
+ 284 0042 00       		.byte	0
+ 285 0043 06       		.uleb128 0x6
+ 286 0044 35       		.uleb128 0x35
+ 287 0045 00       		.byte	0
+ 288 0046 49       		.uleb128 0x49
+ 289 0047 13       		.uleb128 0x13
+ 290 0048 00       		.byte	0
+ 291 0049 00       		.byte	0
+ 292 004a 07       		.uleb128 0x7
+ 293 004b 2E       		.uleb128 0x2e
+ 294 004c 01       		.byte	0x1
+ 295 004d 3F       		.uleb128 0x3f
+ 296 004e 19       		.uleb128 0x19
+ 297 004f 03       		.uleb128 0x3
+ 298 0050 0E       		.uleb128 0xe
+ 299 0051 3A       		.uleb128 0x3a
+ 300 0052 0B       		.uleb128 0xb
+ 301 0053 3B       		.uleb128 0x3b
+ 302 0054 0B       		.uleb128 0xb
+ 303 0055 49       		.uleb128 0x49
+ 304 0056 13       		.uleb128 0x13
+ 305 0057 8701     		.uleb128 0x87
+ 306 0059 19       		.uleb128 0x19
+ 307 005a 11       		.uleb128 0x11
+ 308 005b 01       		.uleb128 0x1
+ 309 005c 12       		.uleb128 0x12
+ 310 005d 06       		.uleb128 0x6
+ 311 005e 40       		.uleb128 0x40
+ 312 005f 18       		.uleb128 0x18
+ 313 0060 9742     		.uleb128 0x2117
+ 314 0062 19       		.uleb128 0x19
+ 315 0063 01       		.uleb128 0x1
+ 316 0064 13       		.uleb128 0x13
+ 317 0065 00       		.byte	0
+ 318 0066 00       		.byte	0
+ 319 0067 08       		.uleb128 0x8
+ 320 0068 898201   		.uleb128 0x4109
+ 321 006b 00       		.byte	0
+ 322 006c 11       		.uleb128 0x11
+ 323 006d 01       		.uleb128 0x1
+ 324 006e 31       		.uleb128 0x31
+ 325 006f 13       		.uleb128 0x13
+ 326 0070 00       		.byte	0
+ 327 0071 00       		.byte	0
+ 328 0072 09       		.uleb128 0x9
+ 329 0073 34       		.uleb128 0x34
+ 330 0074 00       		.byte	0
+ 331 0075 03       		.uleb128 0x3
+ 332 0076 0E       		.uleb128 0xe
+ 333 0077 3A       		.uleb128 0x3a
+ 334 0078 0B       		.uleb128 0xb
+ 335 0079 3B       		.uleb128 0x3b
+ 336 007a 05       		.uleb128 0x5
+ 337 007b 49       		.uleb128 0x49
+ 338 007c 13       		.uleb128 0x13
+ 339 007d 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 8
+
+
+ 340 007e 19       		.uleb128 0x19
+ 341 007f 3C       		.uleb128 0x3c
+ 342 0080 19       		.uleb128 0x19
+ 343 0081 00       		.byte	0
+ 344 0082 00       		.byte	0
+ 345 0083 0A       		.uleb128 0xa
+ 346 0084 2E       		.uleb128 0x2e
+ 347 0085 00       		.byte	0
+ 348 0086 3F       		.uleb128 0x3f
+ 349 0087 19       		.uleb128 0x19
+ 350 0088 3C       		.uleb128 0x3c
+ 351 0089 19       		.uleb128 0x19
+ 352 008a 6E       		.uleb128 0x6e
+ 353 008b 0E       		.uleb128 0xe
+ 354 008c 03       		.uleb128 0x3
+ 355 008d 0E       		.uleb128 0xe
+ 356 008e 3A       		.uleb128 0x3a
+ 357 008f 0B       		.uleb128 0xb
+ 358 0090 3B       		.uleb128 0x3b
+ 359 0091 0B       		.uleb128 0xb
+ 360 0092 00       		.byte	0
+ 361 0093 00       		.byte	0
+ 362 0094 00       		.byte	0
+ 363              		.section	.debug_aranges,"",%progbits
+ 364 0000 1C000000 		.4byte	0x1c
+ 365 0004 0200     		.2byte	0x2
+ 366 0006 00000000 		.4byte	.Ldebug_info0
+ 367 000a 04       		.byte	0x4
+ 368 000b 00       		.byte	0
+ 369 000c 0000     		.2byte	0
+ 370 000e 0000     		.2byte	0
+ 371 0010 00000000 		.4byte	.LFB63
+ 372 0014 28000000 		.4byte	.LFE63-.LFB63
+ 373 0018 00000000 		.4byte	0
+ 374 001c 00000000 		.4byte	0
+ 375              		.section	.debug_ranges,"",%progbits
+ 376              	.Ldebug_ranges0:
+ 377 0000 00000000 		.4byte	.LFB63
+ 378 0004 28000000 		.4byte	.LFE63
+ 379 0008 00000000 		.4byte	0
+ 380 000c 00000000 		.4byte	0
+ 381              		.section	.debug_line,"",%progbits
+ 382              	.Ldebug_line0:
+ 383 0000 93010000 		.section	.debug_str,"MS",%progbits,1
+ 383      02007101 
+ 383      00000201 
+ 383      FB0E0D00 
+ 383      01010101 
+ 384              	.LASF6:
+ 385 0000 6C6F6E67 		.ascii	"long long int\000"
+ 385      206C6F6E 
+ 385      6720696E 
+ 385      7400
+ 386              	.LASF3:
+ 387 000e 73686F72 		.ascii	"short unsigned int\000"
+ 387      7420756E 
+ 387      7369676E 
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 9
+
+
+ 387      65642069 
+ 387      6E7400
+ 388              	.LASF8:
+ 389 0021 756E7369 		.ascii	"unsigned int\000"
+ 389      676E6564 
+ 389      20696E74 
+ 389      00
+ 390              	.LASF19:
+ 391 002e 57616974 		.ascii	"Wait_Forever_Read\000"
+ 391      5F466F72 
+ 391      65766572 
+ 391      5F526561 
+ 391      6400
+ 392              	.LASF22:
+ 393 0040 6D61696E 		.ascii	"main.c\000"
+ 393      2E6300
+ 394              	.LASF24:
+ 395 0047 6D61696E 		.ascii	"main\000"
+ 395      00
+ 396              	.LASF18:
+ 397 004c 50574D5F 		.ascii	"PWM_1_Start\000"
+ 397      315F5374 
+ 397      61727400 
+ 398              	.LASF23:
+ 399 0058 5C5C7361 		.ascii	"\\\\sauron\\wormley\\shared\\git\\local\\FluxEngine"
+ 399      75726F6E 
+ 399      5C776F72 
+ 399      6D6C6579 
+ 399      5C736861 
+ 400 0084 5F426F6F 		.ascii	"_Bootloader.cydsn\000"
+ 400      746C6F61 
+ 400      6465722E 
+ 400      63796473 
+ 400      6E00
+ 401              	.LASF21:
+ 402 0096 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 402      43313120 
+ 402      352E342E 
+ 402      31203230 
+ 402      31363036 
+ 403 00c9 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 403      20726576 
+ 403      6973696F 
+ 403      6E203233 
+ 403      37373135 
+ 404 00fc 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 404      66756E63 
+ 404      74696F6E 
+ 404      2D736563 
+ 404      74696F6E 
+ 405              	.LASF11:
+ 406 0124 75696E74 		.ascii	"uint8\000"
+ 406      3800
+ 407              	.LASF5:
+ 408 012a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 408      20756E73 
+ 408      69676E65 
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 10
+
+
+ 408      6420696E 
+ 408      7400
+ 409              	.LASF7:
+ 410 013c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 410      206C6F6E 
+ 410      6720756E 
+ 410      7369676E 
+ 410      65642069 
+ 411              	.LASF1:
+ 412 0153 756E7369 		.ascii	"unsigned char\000"
+ 412      676E6564 
+ 412      20636861 
+ 412      7200
+ 413              	.LASF14:
+ 414 0161 63686172 		.ascii	"char\000"
+ 414      00
+ 415              	.LASF15:
+ 416 0166 72656738 		.ascii	"reg8\000"
+ 416      00
+ 417              	.LASF13:
+ 418 016b 646F7562 		.ascii	"double\000"
+ 418      6C6500
+ 419              	.LASF4:
+ 420 0172 6C6F6E67 		.ascii	"long int\000"
+ 420      20696E74 
+ 420      00
+ 421              	.LASF25:
+ 422 017b 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 422      52784275 
+ 422      66666572 
+ 422      00
+ 423              	.LASF0:
+ 424 0188 7369676E 		.ascii	"signed char\000"
+ 424      65642063 
+ 424      68617200 
+ 425              	.LASF16:
+ 426 0194 6C6F6E67 		.ascii	"long double\000"
+ 426      20646F75 
+ 426      626C6500 
+ 427              	.LASF9:
+ 428 01a0 5F5F696E 		.ascii	"__int32_t\000"
+ 428      7433325F 
+ 428      7400
+ 429              	.LASF12:
+ 430 01aa 666C6F61 		.ascii	"float\000"
+ 430      7400
+ 431              	.LASF2:
+ 432 01b0 73686F72 		.ascii	"short int\000"
+ 432      7420696E 
+ 432      7400
+ 433              	.LASF10:
+ 434 01ba 696E7433 		.ascii	"int32_t\000"
+ 434      325F7400 
+ 435              	.LASF20:
+ 436 01c2 424C5F53 		.ascii	"BL_Start\000"
+ 436      74617274 
+ 436      00
+ARM GAS  C:\Users\wormley\AppData\Local\Temp\ccSWwNwK.s 			page 11
+
+
+ 437              	.LASF17:
+ 438 01cb 73697A65 		.ascii	"sizetype\000"
+ 438      74797065 
+ 438      00
+ 439              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

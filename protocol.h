@@ -67,6 +67,9 @@ enum
     F_FRAME_SET_DRIVE_REPLY,      /* any_frame */
     F_FRAME_MEASURE_VOLTAGES_CMD, /* any_frame */
     F_FRAME_MEASURE_VOLTAGES_REPLY, /* voltages_frame */
+    F_FRAME_RESET_CMD, /* reset_frame */
+    F_FRAME_RESET_REPLY, /* reset_frame */
+
 };
 
 enum
@@ -89,6 +92,12 @@ enum
 {
     F_BIT_PULSE = 0x80,
     F_BIT_INDEX = 0x40
+};
+
+enum
+{
+    F_RESET_NORMAL,
+    F_RESET_BOOTLOADER
 };
 
 struct frame_header
@@ -190,5 +199,12 @@ struct voltages_frame
     struct voltages input_drive_0_running;
     struct voltages input_drive_1_running;
 };
+
+struct reset_frame
+{
+    struct frame_header f;
+    uint8_t reset_type;
+};
+
 
 #endif
