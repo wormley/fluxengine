@@ -76,7 +76,7 @@ int CyBtldr_FromAscii(uint32_t bufSize, uint8_t* buffer, uint16_t* rowSize, uint
     return err;
 }
 
-int CyBtldr_ReadLine(uint32_t* size, char* buffer)
+int CyBtldr_ReadLine(uint32_t* size, uint8_t* buffer)
 {
     int err = CYRET_SUCCESS;
     uint32_t len;
@@ -86,9 +86,9 @@ int CyBtldr_ReadLine(uint32_t* size, char* buffer)
         len = 0;
         if (NULL != dataFile && !feof(dataFile))
         {
-            if (NULL != fgets(buffer, MAX_BUFFER_SIZE * 2, dataFile))
+            if (NULL != fgets((char *)buffer, MAX_BUFFER_SIZE * 2, dataFile))
             {
-                len = strlen(buffer);
+                len = strlen((char *)buffer);
 
                 while (len > 0 && ('\n' == buffer[len - 1] || '\r' == buffer[len - 1]))
                     --len;
@@ -321,11 +321,11 @@ int CyBtldr_ParseAppStartAndSize_v1(uint32_t* appStart, uint32_t* appSize, uint8
                 }
                 (*appSize) += rowSize;
             }
-            else if (rowLength >= APPINFO_META_HEADER_SIZE && strncmp(buf, APPINFO_META_HEADER, APPINFO_META_HEADER_SIZE) == 0)
+            else if (rowLength >= APPINFO_META_HEADER_SIZE && strncmp((char *)buf, APPINFO_META_HEADER, APPINFO_META_HEADER_SIZE) == 0)
             {
                 // find seperator index
-                seperatorIndex = strcspn(buf, APPINFO_META_SEPERATOR_START);
-                if (strncmp(buf + seperatorIndex, APPINFO_META_SEPERATOR, APPINFO_META_SEPERATOR_SIZE) == 0)
+                seperatorIndex = strcspn((char *)buf, APPINFO_META_SEPERATOR_START);
+                if (strncmp((char *)buf + seperatorIndex, APPINFO_META_SEPERATOR, APPINFO_META_SEPERATOR_SIZE) == 0)
                 {
                     *appStart = 0;
                     *appSize = 0;

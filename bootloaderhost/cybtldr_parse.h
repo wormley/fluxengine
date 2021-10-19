@@ -77,7 +77,7 @@ int CyBtldr_FromAscii(uint32_t bufSize, uint8_t* buffer, uint16_t* rowSize, uint
 *   CYRET_ERR_EOF  - The end of the file has been reached
 *
 *******************************************************************************/
-EXTERN int CyBtldr_ReadLine(uint32_t* size, char* buffer);
+EXTERN int CyBtldr_ReadLine(uint32_t* size, uint8_t* buffer);
 
 /*******************************************************************************
 * Function Name: CyBtldr_OpenDataFile

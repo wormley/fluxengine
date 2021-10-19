@@ -7,3 +7,4 @@ Debug
 .ninja_log
 *.lst
 *.log
+.nfs*

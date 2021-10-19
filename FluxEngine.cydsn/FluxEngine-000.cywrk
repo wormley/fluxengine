@@ -8,6 +8,7 @@
 <files />
 <projects>
 <v>.\FluxEngine.cyprj</v>
+<v>..\FluxEngine_Bootloader.cydsn\FluxEngine_Bootloader.cyprj</v>
 </projects>
 <workspace_id v="135bce4d-9bca-4255-8e27-8abfde6df414" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />

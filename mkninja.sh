@@ -483,6 +483,10 @@ buildsimpleprogram brother240tool \
     libemu.a \
     libfmt.a \
 
+buildsimpleprogram febootload \
+    bootloaderhost/febootload.c          \
+    bootloaderhost/cybtldr_parse.c
+
 buildproto libtestproto.a \
     tests/testproto.proto \
 

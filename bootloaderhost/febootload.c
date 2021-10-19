@@ -31,7 +31,6 @@
      libusb_device_handle *lvr_hid;
      int retval;
      int i;
-     char dname[32] = {0};
      libusb_init(&ctx);
      
 
@@ -52,7 +51,7 @@
 	if ( ! libusb_get_active_config_descriptor(libusb_get_device(lvr_hid), &conf) ) 
         	for(i = 0; i < conf->bNumInterfaces; i++) {
                 printf("Detach %d\n",i);
-		if ( retval= libusb_detach_kernel_driver(lvr_hid, i) ) {
+		if ( (retval= libusb_detach_kernel_driver(lvr_hid, i)) ) {
                 if (retval != LIBUSB_ERROR_NO_DEVICE && retval != LIBUSB_ERROR_NOT_FOUND) { 
                         printf("Detach failed with %d\n",retval);
 			libusb_close(lvr_hid);
@@ -87,8 +86,6 @@
  
  libusb_device_handle *find_lvr_hid() 
  {
-     struct libusb_bus *bus;
- 
          libusb_device_handle *handle;
          if (!(handle=libusb_open_device_with_vid_pid(ctx,VENDOR_ID,PRODUCT_ID))) {
            printf("Could not open USB device\n");
@@ -110,9 +107,9 @@
 
   int send_interrupt_transfer(libusb_device_handle *dev,unsigned char cmd,unsigned char *data , int len, unsigned char *response)
   {
-    int r,i;
+    int r;
     int count;
-    char request[reqIntLen] ;
+    uint8_t request[reqIntLen] ;
     uint16_t csum;
     int reqlen=0;
     request[0]=0x01;
@@ -146,7 +143,7 @@
     printf("Read: %d %d\n",r,count);
     reqlen = 4 + response[2] + (response[3]<<8);
     csum = do_checksum(response,reqlen);
-    if (csum & 0xff != response[reqlen] || csum >>8 != response[reqlen+1] ) {
+    if ( (csum & 0xff) != response[reqlen] || (csum >>8) != response[reqlen+1] ) {
       printf("Invalid checksum %d %02X %02X %02X %02X \n",reqlen,response[0],response[1],response[2],response[3]);
       return(-1);
     }
@@ -178,8 +175,6 @@ int program_row(libusb_device_handle *dev,uint8_t array_id, uint16_t row_number,
  {
    int rv,i;
    uint32_t jtag_id;
-   int device_revision;
-   int bootloader_revision;
    unsigned char response[reqIntLen];
    unsigned char read_buf[READ_BUF_SIZE];
    unsigned char row_buf[READ_BUF_SIZE];
