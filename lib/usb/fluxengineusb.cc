@@ -136,6 +136,16 @@ public:
 		await_reply<struct any_frame>(F_FRAME_SEEK_REPLY);
 	}
 
+	void remotereset(int type)
+	{
+		struct reset_frame f = {
+			.f = { .type = F_FRAME_RESET_CMD, .size = sizeof(f) },
+			.reset_type = (uint8_t) type
+		};
+		usb_cmd_send(&f, f.f.size);
+		await_reply<struct any_frame>(F_FRAME_RESET_REPLY);
+	}
+
 	void recalibrate()
 	{
 		struct any_frame f = {

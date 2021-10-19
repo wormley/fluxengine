@@ -67,8 +67,8 @@ enum
     F_FRAME_SET_DRIVE_REPLY,      /* any_frame */
     F_FRAME_MEASURE_VOLTAGES_CMD, /* any_frame */
     F_FRAME_MEASURE_VOLTAGES_REPLY, /* voltages_frame */
-    F_FRAME_RESET_CMD, /* reset_frame */
-    F_FRAME_RESET_REPLY, /* reset_frame */
+    F_FRAME_RESET_CMD,            /* reset_frame */
+    F_FRAME_RESET_REPLY,          /* reset_frame */
 
 };
 

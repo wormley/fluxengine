@@ -27,6 +27,8 @@ public:
 	virtual void erase(int side, nanoseconds_t hardSectorThreshold) = 0;
 	virtual void setDrive(int drive, bool high_density, int index_mode) = 0;
 	virtual void measureVoltages(struct voltages_frame* voltages) = 0;
+	virtual void remotereset(int type) = 0;
+
 
 protected:
 	std::string usberror(int i);
@@ -42,6 +44,7 @@ extern USB* createGreaseWeazleUsb(const std::string& serialPort);
 static inline int usbGetVersion()     { return getUsb().getVersion(); }
 static inline void usbRecalibrate()   { getUsb().recalibrate(); }
 static inline void usbSeek(int track) { getUsb().seek(track); }
+static inline void usbRemoteReset(int type) { getUsb().remotereset(type); }
 static inline void usbTestBulkWrite() { getUsb().testBulkWrite(); }
 static inline void usbTestBulkRead()  { getUsb().testBulkRead(); }
 

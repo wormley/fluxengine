@@ -453,6 +453,7 @@ buildlibrary libfrontend.a \
     src/fe-seek.cc \
     src/fe-testbandwidth.cc \
     src/fe-testvoltages.cc \
+    src/fe-reset.cc \
     src/fe-upgradefluxfile.cc \
     src/fe-write.cc \
     src/fluxengine.cc \

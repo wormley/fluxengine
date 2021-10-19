@@ -521,6 +521,10 @@ public:
     void measureVoltages(struct voltages_frame* voltages)
     { Error() << "unsupported operation on the GreaseWeazle"; }
 
+	void remotereset(int type)
+    { Error() << "unsupported operation on the GreaseWeazle"; }
+
+
 private:
     enum
     {

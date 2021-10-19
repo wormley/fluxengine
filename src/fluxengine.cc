@@ -28,6 +28,7 @@ struct Command
 
 static command_cb mainAnalyse;
 static command_cb mainTest;
+static command_cb mainReset;
 
 static std::vector<Command> commands =
 {
@@ -40,7 +41,7 @@ static std::vector<Command> commands =
     { "rpm",               mainRpm,               "Measures the disk rotational speed.", },
     { "seek",              mainSeek,              "Moves the disk head.", },
     { "test",              mainTest,              "Various testing commands.", },
-    { "reset",             mainReset,             "Reset remote device.", },
+    { "reset",             mainReset,             "Reset remote FluxEngine device.", },
     { "upgradefluxfile",   mainUpgradeFluxFile,   "Upgrades a flux file from a previous version of this software.", },
 };
 
@@ -58,8 +59,8 @@ static std::vector<Command> testables =
 
 static std::vector<Command> resetables =
 {
-    { "normal",     mainResetNormal, "Normal Reset of Remote Device.", },
-    { "bootloader",      mainResetBootloader,  "Reset Remote Device to Bootloader.", },
+    { "normal",        mainResetNormal, "Normal Reset of Remote Device.", },
+    { "bootloader",    mainResetBootloader,  "Reset Remote Device to Bootloader.", },
 };
 
 static void extendedHelp(std::vector<Command>& subcommands, const std::string& command)

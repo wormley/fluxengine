@@ -50,13 +50,13 @@ int main()
        Refer to the Bootloader Componet datasheet for more information.
     */
     PWM_1_Start();
-	if((Wait_Forever_Read() == 0/*Pressed*/) || (BL_GET_RUN_TYPE == BL_START_BTLDR))
+	if((Wait_Forever_Read() == 0/*Pressed*/) || (Bootloader_GET_RUN_TYPE == Bootloader_START_BTLDR))
 	{	
-		BL_SET_RUN_TYPE(BL_START_BTLDR);
+		Bootloader_SET_RUN_TYPE(Bootloader_START_BTLDR);
 	}
 
 	/* Start Bootloader - we never return from this function */
-	BL_Start();
+	Bootloader_Start();
     /* BL_Start() will not return and it stays in the BL_Statrt() */
 
     /* CyGlobalIntEnable; */ /* Uncomment this line to enable global interrupts. */

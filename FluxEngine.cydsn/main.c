@@ -293,6 +293,17 @@ static void cmd_seek(struct seek_frame* f)
     send_reply(&r);    
 }
 
+static void cmd_reset(struct reset_frame* f)
+{
+    DECLARE_REPLY_FRAME(struct any_frame, F_FRAME_RESET_REPLY);
+    send_reply(&r);    
+    if (f->type == F_RESET_BOOTLOADER) {
+        Bootloader_Start();
+
+    }
+    CySoftwareResset();
+}
+
 static void cmd_recalibrate(void)
 {
     homed = false;

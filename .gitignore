@@ -3,3 +3,7 @@
 Generated_Source
 codegentemp
 Debug
+.ninja_deps
+.ninja_log
+*.lst
+*.log
