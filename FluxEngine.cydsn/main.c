@@ -297,11 +297,14 @@ static void cmd_reset(struct reset_frame* f)
 {
     DECLARE_REPLY_FRAME(struct any_frame, F_FRAME_RESET_REPLY);
     send_reply(&r);    
-    if (f->type == F_RESET_BOOTLOADER) {
-        Bootloader_Start();
+    CyDelay(500);
+#ifdef CY_BOOTLOADABLE_Bootloadable_H
+    if (f->reset_type == F_RESET_BOOTLOADER) {
+        Bootloadable_Load();
 
     }
-    CySoftwareResset();
+#endif
+    CySoftwareReset();
 }
 
 static void cmd_recalibrate(void)
@@ -880,7 +883,11 @@ static void handle_command(void)
         case F_FRAME_MEASURE_VOLTAGES_CMD:
             cmd_measure_voltages();
             break;
-            
+
+        case F_FRAME_RESET_CMD:
+            cmd_reset((struct reset_frame *) f);
+            break;
+
         default:
             send_error(F_ERROR_BAD_COMMAND);
     }
