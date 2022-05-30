@@ -17,7 +17,17 @@ image_reader {
 
 image_writer {
 	filename: "brother120.img"
-	img {}
+	img {
+		tracks: 39
+		sides: 1
+		trackdata {
+			sector_size: 256
+			sector_range {
+				start_sector: 0
+				sector_count: 12
+			}
+		}
+	}
 }
 
 encoder {
@@ -30,9 +40,13 @@ decoder {
 	brother {}
 }
 
-cylinders {
+drive {
+	head_bias: 1
+}
+
+tracks {
 	start: 0
-	end: 39
+	end: 38
 }
 
 heads {
@@ -40,3 +54,4 @@ heads {
 	end: 0
 }
 
+tpi: 48

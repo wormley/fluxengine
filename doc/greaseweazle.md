@@ -7,20 +7,21 @@ completely open source solution. This requires more work to set up (or you can
 buy a prebuilt GreaseWeazle board), but provides completely open source
 hardware which doesn't require the use of the Cypress Windows-based tools that
 the FluxEngine does. Luckily, the FluxEngine software supports it almost
-out-of-the-box --- just plug it in and nearly everything should work. You will
-need to tell FluxEngine which serial port the GreaseWeazle is plugged
-in with:
-
-```
-fluxengine read ibm -o ibm.img --usb.greaseweazle=/dev/ttyACM3
-```
-
-On Windows, use `COM1`/`COM2`/`COM3` etc for the port.
+out-of-the-box --- just plug it in and nearly everything should work. The
+FluxEngine software will autodetect it. If you have more than one device
+plugged in, use `--usb.serial=` to specify which one you want to use.
 
 I am aware that having _software_ called FluxEngine and _hardware_ called
 FluxEngine makes things complicated when you're not using the FluxEngine client
 software with a FluxEngine board, but I'm afraid it's too late to change that
 now. Sorry.
+
+**If you are using GreaseWeazle-compatible hardware** such as the
+[adafruit-floppy](https://github.com/adafruit/Adafruit_Floppy) project, then
+FluxEngine will still work; however, as the USB VID/PID won't be that of a real
+GreaseWeazle, the the FluxEngine client can't autodetect it. Instead, you'll
+need to specify the serial port manually with something like
+`--usb.greaseweazle.port=/dev/ttyACM0` or `--usb.greaseweazle.port=COM5`.
 
 **If you were using a previous version on Windows** you might have installed
 the WinUSB driver. That's no longer needed, and will in fact not work. You'll
@@ -36,6 +37,12 @@ Supported features with the GreaseWeazle include:
   - simple reading and writing of disks, seeking etc
   - erasing disks
   - determining disk rotation speed
+  - Shugart and normal IBM buses (via
+	`--usb.greaseweazle.bus_type=SHUGART` or `IBMPC`; the default is `IBMPC`)
+  - Apple 5.25 floppy interfaces (via `--usb.greaseweazle.bus_type=APPLE2`)
+
+Which device types are supported depend on the hardware. Genuine Greaseweazle hardware supports SHUGART and IBMPC.
+APPLE2 is only supported with hand wiring and the Adafruit\_Floppy greaseweazle-compatible firmware.
 
 What doesn't work
 -----------------

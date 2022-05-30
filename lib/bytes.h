@@ -51,6 +51,8 @@ public:
     Bytes& clear()
     { resize(0); return *this; }
 
+	std::vector<Bytes> split(uint8_t separator) const;
+
     Bytes slice(unsigned start, unsigned len) const;
     Bytes slice(unsigned start) const;
     Bytes swab() const;
@@ -130,6 +132,9 @@ public:
         uint8_t b4 = _bytes[pos++];
         return (b1<<24) | (b2<<16) | (b3<<8) | b4;
     }
+
+    uint64_t read_be48();
+    uint64_t read_be64();
 
     uint16_t read_le16()
     {

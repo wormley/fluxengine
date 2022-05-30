@@ -2,7 +2,7 @@ FluxEngine
 ==========
 
 (If you're reading this on GitHub, the formatting's a bit messed up. [Try the
-version on cowlark.com instead.](http://cowlark.com/fluxengine/)
+version on cowlark.com instead.](http://cowlark.com/fluxengine/))
 
 **Breaking news!** As of 2021-05-21, the command line environment has changed
 _substantially_ (to make it more consistent and flexible, and allow some new
@@ -37,11 +37,6 @@ FluxEngine features are available with the GreaseWeazle and it works out-of-the
 box. See the [dedicated GreaseWeazle documentation page](doc/greaseweazle.md)
 for more information.
 
-**Important note.** On 2020-04-02 I changed the bytecode format (and firmware).
-Flux files will need to be upgraded with `fluxengine upgradefluxfile`. The new
-format should be more reliable and use way, way less bandwidth. Sorry for the
-inconvenience.
-
 Where?
 ------
 
@@ -66,14 +61,18 @@ following friendly articles:
     flux files and image files ∾ knowing what you're doing
 
   - [Using GreaseWeazle hardware with the FluxEngine client
-	software](doc/greaseweazle.md) ∾ what works ∾ what doesn't work ∾ where to
-	go for help
+    software](doc/greaseweazle.md) ∾ what works ∾ what doesn't work ∾ where to
+    go for help
+
+  - [Configuring for your drive](doc/drives.md) ∾ but I don't have a 80 track
+    drive! ∾ reading and writing 40 track disks ∾ Shugart and Apple II
 
   - [Troubleshooting dubious disks](doc/problems.md) ∾ it's not an exact
-	science ∾ the sector map ∾ clock detection and the histogram
+    science ∾ the sector map ∾ clock detection and the histogram
 
-  - [Checking your drive](doc/driveresponse.md) ∾ you can't do that with that ∾
-	measuring your drive's ability to work with exotic formats
+  - [Disk densities](doc/driveresponse.md) ∾ what's the difference between an HD
+    and DD disk? ∾ you can't do that with that ∾ measuring your drive's ability to
+    work with exotic formats ∾ I think my drive is broken
 
 Which?
 ------
@@ -93,16 +92,21 @@ people who've had it work).
 | Format                                    | Read? | Write? | Notes |
 |:------------------------------------------|:-----:|:------:|-------|
 | [IBM PC compatible](doc/disk-ibm.md)      |  🦄   |   🦄   | and compatibles (like the Atari ST) |
+| [Atari ST](doc/disk-atarist.md)           |  🦄   |   🦄   | technically the same as IBM, almost |
 | [Acorn ADFS](doc/disk-acornadfs.md)       |  🦄   |   🦖*  | single- and double- sided           |
 | [Acorn DFS](doc/disk-acorndfs.md)         |  🦄   |   🦖*  |                                     |
 | [Ampro Little Board](doc/disk-ampro.md)   |  🦖   |   🦖*  |                                     |
-| [Apple II DOS 3.3](doc/disk-apple2.md)    |  🦄   |        | doesn't do logical sector remapping |
+| [Agat](doc/disk-agat.md)                  |  🦖   |        | Soviet Union Apple-II-like computer |
+| [Apple II](doc/disk-apple2.md)            |  🦄   |   🦄   |                                     |
 | [Amiga](doc/disk-amiga.md)                |  🦄   |   🦄   |                                     |
 | [Commodore 64 1541/1581](doc/disk-c64.md) |  🦄   |   🦄   | and probably the other formats      |
-| [Brother 120kB](doc/disk-brother.md)      |  🦄   |   🦖   |                                     |
+| [Brother 120kB](doc/disk-brother.md)      |  🦄   |   🦄   |                                     |
 | [Brother 240kB](doc/disk-brother.md)      |  🦄   |   🦄   |                                     |
 | [Brother FB-100](doc/disk-fb100.md)       |  🦖   |        | Tandy Model 100, Husky Hunter, knitting machines |
-| [Macintosh 800kB](doc/disk-macintosh.md)  |  🦄   |   🦄   | and probably the 400kB too          |
+| [Elektronika BK](doc/disk-bd.md)          |  🦄   |   🦄   | Soviet Union PDP-11 clone           |
+| [Macintosh 400kB/800kB](doc/disk-macintosh.md)  |  🦄   |   🦄   |                                     |
+| [NEC PC-98](doc/disk-ibm.md)              |  🦄   |   🦄   | trimode drive not required          |
+| [Sharp X68000](doc/disk-ibm.md)           |  🦄   |   🦄   |                                     |
 | [TRS-80](doc/disk-trs80.md)               |  🦖   |   🦖*  | a minor variation of the IBM scheme |
 {: .datatable }
 
@@ -125,9 +129,9 @@ at least, check the CRC so what data's there is probably good.
 | [DVK MX](doc/disk-mx.md)                 |  🦖   |        | Soviet PDP-11 clone |
 | [VDS Eco1](doc/disk-eco1.md)             |  🦖   |        | 8" mixed format |
 | [Micropolis](doc/disk-micropolis.md)     |  🦄   |        | Micropolis 100tpi drives |
-| [Northstar(doc/disk-northstar.md)        |  🦖   |   🦖   | 5.25" hard sectors |
+| [Northstar](doc/disk-northstar.md)       |  🦖   |   🦖   | 5.25" hard sectors |
 | [TI DS990 FD1000](doc/disk-tids990.md)   |  🦄   |  🦄    | 8" |
-| [Victor 9000](doc/disk-victor9k.md)      |  🦖   |        | 8" |
+| [Victor 9000](doc/disk-victor9k.md)      |  🦖   |        | 5.25" GCR encoded |
 | [Zilog MCZ](doc/disk-zilogmcz.md)        |  🦖   |        | 8" _and_ hard sectors |
 {: .datatable }
 
@@ -146,7 +150,7 @@ at least, check the CRC so what data's there is probably good.
     There hasn't been a lot of demand for this yet; if you have a pressing
     need to write weird disks, [please
     ask](https://github.com/davidgiven/fluxengine/issues/new). I haven't
-    implement write support for PC disks because they're boring and I'm lazy,
+    implemented write support for PC disks because they're boring and I'm lazy,
     and also because they vary so much that figuring out how to specify them
     is hard.
 
@@ -230,3 +234,6 @@ As an exception, `dep/snowhouse` contains the snowhouse assertion library,
 taken from https://github.com/banditcpp/snowhouse. It is Boost Standard License
 1.0 licensed. Please see the contents of the directory for the full text.
 
+As an exception, `dep/libusbp` contains the libusbp library, taken from
+https://github.com/pololu/libusbp. It is MIT licensed. Please see the contents
+of the directory for the full text.

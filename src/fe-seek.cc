@@ -1,7 +1,7 @@
 #include "globals.h"
 #include "flags.h"
 #include "usb/usb.h"
-#include "fluxsource/fluxsource.cc"
+#include "fluxsource/fluxsource.h"
 #include "proto.h"
 #include "protocol.h"
 
@@ -16,9 +16,9 @@ static StringFlag sourceFlux(
 		FluxSource::updateConfigForFilename(config.mutable_flux_source(), value);
 	});
 
-static IntFlag cylinder(
+static IntFlag track(
 	{ "--cylinder", "-c" },
-	"cylinder to seek to",
+	"track to seek to",
 	0);
 
 extern const std::map<std::string, std::string> readables;
@@ -30,7 +30,7 @@ int mainSeek(int argc, const char* argv[])
 	if (!config.flux_source().has_drive())
 		Error() << "this only makes sense with a real disk drive";
 
-    usbSetDrive(config.flux_source().drive().drive(), false, config.flux_source().drive().index_mode());
-	usbSeek(cylinder);
+    usbSetDrive(config.drive().drive(), false, config.drive().index_mode());
+	usbSeek(track);
     return 0;
 }

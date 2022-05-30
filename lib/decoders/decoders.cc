@@ -3,7 +3,8 @@
 #include "fluxmap.h"
 #include "decoders/decoders.h"
 #include "encoders/encoders.h"
-//#include "arch/aeslanier/aeslanier.h"
+#include "arch/agat/agat.h"
+#include "arch/aeslanier/aeslanier.h"
 #include "arch/amiga/amiga.h"
 #include "arch/apple2/apple2.h"
 #include "arch/brother/brother.h"
@@ -25,7 +26,6 @@
 #include "sector.h"
 #include "image.h"
 #include "lib/decoders/decoders.pb.h"
-#include "lib/data.pb.h"
 #include "fmt/format.h"
 #include <numeric>
 
@@ -34,7 +34,8 @@ std::unique_ptr<AbstractDecoder> AbstractDecoder::create(const DecoderProto& con
 	static const std::map<int,
 		std::function<std::unique_ptr<AbstractDecoder>(const DecoderProto&)>> decoders =
 	{
-		//{ DecoderProto::kAeslanier,  createAesLanierDecoder },
+		{ DecoderProto::kAgat,       createAgatDecoder },
+		{ DecoderProto::kAeslanier,  createAesLanierDecoder },
 		{ DecoderProto::kAmiga,      createAmigaDecoder },
 		{ DecoderProto::kApple2,     createApple2Decoder },
 		{ DecoderProto::kBrother,    createBrotherDecoder },
@@ -58,63 +59,77 @@ std::unique_ptr<AbstractDecoder> AbstractDecoder::create(const DecoderProto& con
 	return (decoder->second)(config);
 }
 
-std::unique_ptr<TrackDataFlux> AbstractDecoder::decodeToSectors(
-		std::shared_ptr<const Fluxmap> fluxmap, unsigned physicalCylinder, unsigned physicalHead)
+std::shared_ptr<const TrackDataFlux> AbstractDecoder::decodeToSectors(
+		std::shared_ptr<const Fluxmap> fluxmap, const Location& location)
 {
-	_trackdata = std::make_unique<TrackDataFlux>();
+	_trackdata = std::make_shared<TrackDataFlux>();
 	_trackdata->fluxmap = fluxmap;
-	_trackdata->physicalCylinder = physicalCylinder;
-	_trackdata->physicalHead = physicalHead;
+	_trackdata->location = location;
 	
     FluxmapReader fmr(*fluxmap);
     _fmr = &fmr;
 
+	auto newSector = [&] {
+		_sector = std::make_shared<Sector>();
+		_sector->status = Sector::MISSING;
+		_sector->physicalTrack = location.physicalTrack;
+		_sector->physicalHead = location.head;
+	};
+
+	newSector();
     beginTrack();
     for (;;)
     {
-		_sector = std::make_shared<Sector>();
-		_sector->status = Sector::MISSING;
-		_sector->physicalCylinder = physicalCylinder;
-		_sector->physicalHead = physicalHead;
+		newSector();
 
         Fluxmap::Position recordStart = fmr.tell();
-        RecordType r = advanceToNextRecord();
-        if (fmr.eof() || !_sector->clock)
-            return std::move(_trackdata);
-        if ((r == UNKNOWN_RECORD) || (r == DATA_RECORD))
-        {
-            fmr.findEvent(F_BIT_PULSE);
-            continue;
-        }
+        _sector->clock = advanceToNextRecord();
+		if (fmr.eof() || !_sector->clock)
+            return _trackdata;
 
         /* Read the sector record. */
 
-        recordStart = fmr.tell();
+		Fluxmap::Position before = fmr.tell();
         decodeSectorRecord();
-        Fluxmap::Position recordEnd = fmr.tell();
-        pushRecord(recordStart, recordEnd);
-        if (_sector->status == Sector::DATA_MISSING)
+		Fluxmap::Position after = fmr.tell();
+		pushRecord(before, after);
+
+        if (_sector->status != Sector::DATA_MISSING)
+		{
+			_sector->position = before.bytes;
+			_sector->dataStartTime = before.ns();
+			_sector->dataEndTime = after.ns();
+		}
+		else
         {
             /* The data is in a separate record. */
 
-            _sector->headerStartTime = recordStart.ns();
-            _sector->headerEndTime = recordEnd.ns();
 			for (;;)
 			{
-				r = advanceToNextRecord();
-				if (r != UNKNOWN_RECORD)
+				_sector->headerStartTime = before.ns();
+				_sector->headerEndTime = after.ns();
+
+				_sector->clock = advanceToNextRecord();
+				if (fmr.eof() || !_sector->clock)
 					break;
-				if (fmr.findEvent(F_BIT_PULSE) == 0)
-                    break;
+
+				before = fmr.tell();
+				decodeDataRecord();
+				after = fmr.tell();
+
+				if (_sector->status != Sector::DATA_MISSING)
+				{
+					_sector->position = before.bytes;
+					_sector->dataStartTime = before.ns();
+					_sector->dataEndTime = after.ns();
+					pushRecord(before, after);
+					break;
+				}
+
+				fmr.skipToEvent(F_BIT_PULSE);
+				resetFluxDecoder();
 			}
-            recordStart = fmr.tell();
-            if (r == DATA_RECORD)
-                decodeDataRecord();
-            recordEnd = fmr.tell();
-            pushRecord(recordStart, recordEnd);
         }
-        _sector->dataStartTime = recordStart.ns();
-        _sector->dataEndTime = recordEnd.ns();
 
         if (_sector->status != Sector::MISSING)
 			_trackdata->sectors.push_back(_sector);
@@ -127,22 +142,82 @@ void AbstractDecoder::pushRecord(const Fluxmap::Position& start, const Fluxmap::
 
 	auto record = std::make_shared<Record>();
 	_trackdata->records.push_back(record);
+	_sector->records.push_back(record);
 	
 	record->startTime = start.ns();
 	record->endTime = end.ns();
     record->clock = _sector->clock;
 
-    _fmr->seek(start);
-    record->rawData = toBytes(_fmr->readRawBits(end, _sector->clock));
-    _fmr->seek(here);
+	record->rawData = toBytes(_recordBits);
+	_recordBits.clear();
+}
+
+void AbstractDecoder::resetFluxDecoder()
+{
+	_decoder.reset(new FluxDecoder(_fmr, _sector->clock, _config));
+}
+
+nanoseconds_t AbstractDecoder::seekToPattern(const FluxMatcher& pattern)
+{
+	nanoseconds_t clock = _fmr->seekToPattern(pattern);
+	_decoder.reset(new FluxDecoder(_fmr, clock, _config));
+	return clock;
+}
+
+void AbstractDecoder::seekToIndexMark()
+{
+	_fmr->skipToEvent(F_BIT_PULSE);
+	_fmr->seekToIndexMark();
 }
 
 std::vector<bool> AbstractDecoder::readRawBits(unsigned count)
 {
-	return _fmr->readRawBits(count, _sector->clock);
+	auto bits = _decoder->readBits(count);
+	_recordBits.insert(_recordBits.end(), bits.begin(), bits.end());
+	return bits;
 }
 
-std::set<unsigned> AbstractDecoder::requiredSectors(unsigned cylinder, unsigned head) const
+uint8_t AbstractDecoder::readRaw8()
+{
+	return toBytes(readRawBits(8)).reader().read_8();
+}
+
+uint16_t AbstractDecoder::readRaw16()
+{
+	return toBytes(readRawBits(16)).reader().read_be16();
+}
+
+uint32_t AbstractDecoder::readRaw20()
+{
+	std::vector<bool> bits(4);
+	for (bool b : readRawBits(20))
+		bits.push_back(b);
+
+	return toBytes(bits).reader().read_be24();
+}
+
+uint32_t AbstractDecoder::readRaw24()
+{
+	return toBytes(readRawBits(24)).reader().read_be24();
+}
+
+uint32_t AbstractDecoder::readRaw32()
+{
+	return toBytes(readRawBits(32)).reader().read_be32();
+}
+
+uint64_t AbstractDecoder::readRaw48()
+{
+	return toBytes(readRawBits(48)).reader().read_be48();
+}
+
+uint64_t AbstractDecoder::readRaw64()
+{
+	return toBytes(readRawBits(64)).reader().read_be64();
+}
+
+
+std::set<unsigned> AbstractDecoder::requiredSectors(const Location& location) const
 {
 	static std::set<unsigned> set;
 	return set;

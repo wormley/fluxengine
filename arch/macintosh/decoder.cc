@@ -129,28 +129,22 @@ public:
 		AbstractDecoder(config)
 	{}
 
-    RecordType advanceToNextRecord()
+    nanoseconds_t advanceToNextRecord() override
 	{
-		const FluxMatcher* matcher = nullptr;
-		_sector->clock = _fmr->seekToPattern(ANY_RECORD_PATTERN, matcher);
-		if (matcher == &SECTOR_RECORD_PATTERN)
-			return SECTOR_RECORD;
-		if (matcher == &DATA_RECORD_PATTERN)
-			return DATA_RECORD;
-		return UNKNOWN_RECORD;
+		return seekToPattern(ANY_RECORD_PATTERN);
 	}
 
-    void decodeSectorRecord()
+    void decodeSectorRecord() override
 	{
-		/* Skip ID (as we know it's a MAC_SECTOR_RECORD). */
-		readRawBits(24);
+		if (readRaw24() != MAC_SECTOR_RECORD)
+			return;
 
 		/* Read header. */
 
 		auto header = toBytes(readRawBits(7*8)).slice(0, 7);
 					
 		uint8_t encodedTrack = decode_data_gcr(header[0]);
-		if (encodedTrack != (_sector->physicalCylinder & 0x3f))
+		if (encodedTrack != (_sector->physicalTrack & 0x3f))
 			return;
 					
 		uint8_t encodedSector = decode_data_gcr(header[1]);
@@ -161,7 +155,7 @@ public:
 		if (encodedSector > 11)
 			return;
 
-		_sector->logicalTrack = _sector->physicalCylinder;
+		_sector->logicalTrack = _sector->physicalTrack;
 		_sector->logicalSide = decode_side(encodedSide);
 		_sector->logicalSector = encodedSector;
 		uint8_t gotsum = (encodedTrack ^ encodedSector ^ encodedSide ^ formatByte) & 0x3f;
@@ -169,10 +163,9 @@ public:
 			_sector->status = Sector::DATA_MISSING; /* unintuitive but correct */
 	}
 
-    void decodeDataRecord()
+    void decodeDataRecord() override
 	{
-		auto id = toBytes(readRawBits(24)).reader().read_be24();
-		if (id != MAC_DATA_RECORD)
+		if (readRaw24() != MAC_DATA_RECORD)
 			return;
 
 		/* Read data. */
@@ -190,16 +183,18 @@ public:
 		_sector->data.writer().append(userData.slice(12, 512)).append(userData.slice(0, 12));
 	}
 
-	std::set<unsigned> requiredSectors(unsigned cylinder, unsigned head) const
+	std::set<unsigned> requiredSectors(const Location& location) const override
 	{
+		unsigned track = location.logicalTrack;
+
 		int count;
-		if (cylinder < 16)
+		if (track < 16)
 			count = 12;
-		else if (cylinder < 32)
+		else if (track < 32)
 			count = 11;
-		else if (cylinder < 48)
+		else if (track < 48)
 			count = 10;
-		else if (cylinder < 64)
+		else if (track < 64)
 			count = 9;
 		else
 			count = 8;

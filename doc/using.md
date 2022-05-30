@@ -43,13 +43,14 @@ file while changing the decoder options, to save disk wear. It's also much faste
 
 ### Connecting it up
 
-To use, simply plug your FluxEngine into your computer and run the client. If a
-single device is plugged in, it will be automatically detected and used.
+To use, simply plug your FluxEngine (or [GreaseWeazle](greaseweazle.md)) into
+your computer and run the client. If a single device is plugged in, it will be
+automatically detected and used.
 
 If _more_ than one device is plugged in, you need to specify which one to use
-with the `--usb.fluxengine` parameter, which takes the device serial number as a
+with the `--usb.serial` parameter, which takes the device serial number as a
 parameter.  You can find out the serial numbers by running the command without
-the `--usb.fluxengine` parameter, and if more than one device is attached they will
+the `--usb.serial` parameter, and if more than one device is attached they will
 be listed. The serial number is also shown whenever a connection is made.
 
 You _can_ work with more than one FluxEngine at the same time, using different
@@ -65,12 +66,12 @@ Configurations can be specified either on the command line or in text files.
 Here are some sample invocations:
 
 ```
-# Read an PC disk, producing a disk image with the default name (ibm.img),
-# autodetecting all parameters
-$ fluxengine read ibm
+# Read an PC 1440kB disk, producing a disk image with the default name
+# (ibm.img)
+$ fluxengine read ibm1440
 
 # Write a PC 1440kB disk to drive 1
-$ fluxengine write ibm -i image.img -d drive:1
+$ fluxengine write ibm1440 -i image.img -d drive:1
 
 # Read a Eco1 CP/M disk, making a copy of the flux into a file
 $ fluxengine read eco1 --copy-flux-to copy.flux -o eco1.ldbs
@@ -81,7 +82,7 @@ $ fluxengine read eco1 -s copy.flux -o eco1.ldbs --cylinders=1
 
 ### Configuration
 
-Configuration options are reperesented as a hierarchical structure. You can
+Configuration options are represented as a hierarchical structure. You can
 either put them in a text file and load them from the command line:
 
 ```
@@ -107,8 +108,9 @@ protobuf syntax](https://developers.google.com/protocol-buffers), which is
 hierarchical, type-safe, and easy to read.
 
 The `ibm1440` string above is actually a reference to an internal configuration
-file containing all the settings for writing PC 1440kB disks. You can see all
-these settings by doing:
+file containing all the settings for writing PC 1440kB disks. You may specify
+as many profile names or textpb files as you wish; they are all merged left to
+right.  You can see all these settings by doing:
 
 ```
 $ fluxengine write ibm1440 --config
@@ -233,7 +235,7 @@ FluxEngine supports a number of ways to get or put flux. When using the `-s` or
 FluxEngine also supports a number of file system image formats. When using the
 `-i` or `-o` options (for input and output), you can use any of these strings:
 
-  - `<filename.adf>`, `<filename.d81>`, `<filename.img>`, `<filename.st>`
+  - `<filename.adf>`, `<filename.d81>`, `<filename.img>`, `<filename.st>`, `<filename.xdf>`
 
 	Read from or write to a simple headerless image file (all these formats are
 	the same). This will probably want configuration via the
@@ -256,17 +258,58 @@ FluxEngine also supports a number of file system image formats. When using the
 
 	Read from a JV3 image file, commonly used by TRS-80 emulators. **Read
 	only.**
+
+  - `<filename.dim>`
+
+  Read from a [DIM image file](https://www.pc98.org/project/doc/dim.html),
+  commonly used by X68000 emulators. Supports automatically configuring
+  the encoder. **Read only.**
+  
+  - `<filename.fdi>`
+
+  Read from a [FDI image file](https://www.pc98.org/project/doc/hdi.html),
+  commonly used by PC-98 emulators. Supports automatically configuring
+  the encoder. **Read only.**
+  
+  - `<filename.d88>`
+
+  Read from a [D88 image file](https://www.pc98.org/project/doc/d88.html),
+  commonly used by various Japanese PC emulators, including the NEC PC-88. **Read only.**
+  
+  FluxEngine is currently limited to reading only the first floppy image in a
+  D88 file.
+  
+  The D88 reader should be used with the `ibm` profile and will override
+  most encoding parameters on a track-by-track basis.
+  
+  - `<filename.nfd>`
+
+  Read from a [NFD r0 image file](https://www.pc98.org/project/doc/nfdr0.html),
+  commonly used by various Japanese PC emulators, including the NEC PC-98. **Read only.**
+
+  Only r0 version files are currently supported.
+  
+  The NFD reader should be used with the `ibm` profile and will override
+  most encoding parameters on a track-by-track basis.
   
   - `<filename.ldbs>`
 
-	Write to a [LDBS generic image
-	file](https://www.seasip.info/Unix/LibDsk/ldbs.html). **Write only.**
-  
-  - `<filename.d64>`
+  Write to a [LDBS generic image
+  file](https://www.seasip.info/Unix/LibDsk/ldbs.html). **Write only.**
 
-	Write to a [D64 image
-	file](http://unusedino.de/ec64/technical/formats/d64.html), commonly used
-	by Commodore 64 emulators. **Write only.**
+  - `<filename.d64>`
+  
+  Write to a [D64 image
+  file](http://unusedino.de/ec64/technical/formats/d64.html), commonly used by
+  Commodore 64 emulators. **Write only.**
+
+  - `<filename.raw>`
+
+  Write undecoded data to a raw binary file. **Write only.** This gives you the
+  underlying MFM, FM or GCR stream, without actually doing the decode into
+  user-visible bytes. However, the decode is still done in order to check for
+  correctness. Individual records are separated by three `\\0` bytes and tracks
+  are separated by four `\\0` bytes; tracks are emitted in CHS order.
 
 ### High density disks
 
@@ -275,7 +318,7 @@ disks, and have different magnetic properties. 3.5" drives can usually
 autodetect what kind of medium is inserted into the drive based on the hole in
 the disk casing, but 5.25" drives can't. As a result, you need to explicitly
 tell FluxEngine on the command line whether you're using a high density disk or
-not with the `--flux_source/sink.drive.high_density` configuration setting.
+not with the `--drive.high_density` configuration setting.
 **If you don't do this, your disks may not read correctly and will _certainly_
 fail to write correctly.**
 
@@ -292,14 +335,14 @@ here.](http://www.retrotechnology.com/herbs_stuff/guzis.html)
 These flags apply to many operations and are useful for modifying the overall
 behaviour.
 
-  - `--flux_source.drive.revolutions=X`
+  - `--drive.revolutions=X`
 
     When reading, spin the disk X times. X
 	can be a floating point number. The default is usually 1.2. Some formats
 	default to 1.  Increasing the number will sample more data, and can be
 	useful on dubious disks to try and get a better read.
 
-  - `--flux_source.drive.sync_with_index=true|false`
+  - `--drive.sync_with_index=true|false`
 
     Wait for an index pulse
 	before starting to read the disk. (Ignored for write operations.) By
@@ -307,7 +350,7 @@ behaviour.
 	disk problems it's helpful to have all your data start at the same place
 	each time.
 
-  - `--flux_source.drive.index_source=X`, `--flux_sink.drive.index_source=X`
+  - `--drive.index_source=X`
 
 	Set the source of index pulses when reading or writing respectively. This
 	is for use with drives which don't produce index pulse data. `X` can be
@@ -316,6 +359,16 @@ behaviour.
 	has no effect on the _drive_, so it doesn't help with flippy disks, but is
 	useful for using very old drives with FluxEngine itself. If you use this
 	option, then any index marks in the sampled flux are, of course, garbage.
+  
+  - `--flux_source.rescale=X, --flux_sink.rescale=X`
+  
+  When reading or writing a floppy on a drive that doesn't match the
+  original drive RPM, the flux periods can be scaled to compensate.
+  
+  For example, to read or write a PC-98 1.2MB (360rpm) floppy using a 300rpm
+  floppy drive:
+  
+  `--flux_source.rescale=1.2 --flux_sink.rescale=1.2`
 
 ## Visualisation
 
@@ -352,7 +405,7 @@ containing valuable historical data, and you want to read them.
 Typically I do this:
 
 ```
-$ fluxengine read brother -s drive:0 -o brother.img --copy-flux-to=brother.flux --decoder.write_csv_to=brother.csv
+$ fluxengine read brother240 -s drive:0 -o brother.img --copy-flux-to=brother.flux --decoder.write_csv_to=brother.csv
 ```
 
 This will read the disk in drive 0 and write out an information CSV file. It'll

@@ -14,6 +14,15 @@ std::unique_ptr<ImageReader> ImageReader::create(const ImageReaderProto& config)
 {
 	switch (config.format_case())
 	{
+		case ImageReaderProto::kDim:
+			return ImageReader::createDimImageReader(config);
+
+		case ImageReaderProto::kD88:
+			return ImageReader::createD88ImageReader(config);
+
+		case ImageReaderProto::kFdi:
+			return ImageReader::createFdiImageReader(config);
+
 		case ImageReaderProto::kImd:
 			return ImageReader::createIMDImageReader(config);
 
@@ -29,6 +38,9 @@ std::unique_ptr<ImageReader> ImageReader::create(const ImageReaderProto& config)
 		case ImageReaderProto::kD64:
 			return ImageReader::createD64ImageReader(config);
 
+		case ImageReaderProto::kNfd:
+			return ImageReader::createNFDImageReader(config);
+
 		case ImageReaderProto::kNsi:
 			return ImageReader::createNsiImageReader(config);
 
@@ -43,25 +55,32 @@ std::unique_ptr<ImageReader> ImageReader::create(const ImageReaderProto& config)
 
 void ImageReader::updateConfigForFilename(ImageReaderProto* proto, const std::string& filename)
 {
-	static const std::map<std::string, std::function<void(void)>> formats =
+	static const std::map<std::string, std::function<void(ImageReaderProto*)>> formats =
 	{
-		{".adf",      [&]() { proto->mutable_img(); }},
-		{".jv3",      [&]() { proto->mutable_jv3(); }},
-		{".d64",      [&]() { proto->mutable_d64(); }},
-		{".d81",      [&]() { proto->mutable_img(); }},
-		{".diskcopy", [&]() { proto->mutable_diskcopy(); }},
-		{".img",      [&]() { proto->mutable_img(); }},
-		{".st",       [&]() { proto->mutable_img(); }},
-		{".nsi",      [&]() { proto->mutable_nsi(); }},
-		{".td0",      [&]() { proto->mutable_td0(); }},
-		{".TD0",      [&]() { proto->mutable_td0(); }},
+		{".adf",      [](auto* proto) { proto->mutable_img(); }},
+		{".d64",      [](auto* proto) { proto->mutable_d64(); }},
+		{".d81",      [](auto* proto) { proto->mutable_img(); }},
+		{".d88",      [](auto* proto) { proto->mutable_d88(); }},
+		{".dim",      [](auto* proto) { proto->mutable_dim(); }},
+		{".diskcopy", [](auto* proto) { proto->mutable_diskcopy(); }},
+		{".dsk",      [](auto* proto) { proto->mutable_img(); }},
+		{".fdi",      [](auto* proto) { proto->mutable_fdi(); }},
+		{".imd",      [](auto* proto) { proto->mutable_imd(); }},
+		{".img",      [](auto* proto) { proto->mutable_img(); }},
+		{".jv3",      [](auto* proto) { proto->mutable_jv3(); }},
+		{".nfd",      [](auto* proto) { proto->mutable_nfd(); }},
+		{".nsi",      [](auto* proto) { proto->mutable_nsi(); }},
+		{".st",       [](auto* proto) { proto->mutable_img(); }},
+		{".td0",      [](auto* proto) { proto->mutable_td0(); }},
+		{".vgi",      [](auto* proto) { proto->mutable_img(); }},
+		{".xdf",      [](auto* proto) { proto->mutable_img(); }},
 	};
 
 	for (const auto& it : formats)
 	{
 		if (endsWith(filename, it.first))
 		{
-			it.second();
+			it.second(proto);
 			proto->set_filename(filename);
 			return;
 		}
@@ -73,21 +92,3 @@ void ImageReader::updateConfigForFilename(ImageReaderProto* proto, const std::st
 ImageReader::ImageReader(const ImageReaderProto& config):
     _config(config)
 {}
-
-void getTrackFormat(const ImgInputOutputProto& config,
-		ImgInputOutputProto::TrackdataProto& trackdata, unsigned track, unsigned side)
-{
-	trackdata.Clear();
-	for (const ImgInputOutputProto::TrackdataProto& f : config.trackdata())
-	{
-		if (f.has_track() && f.has_up_to_track() && ((track < f.track()) || (track > f.up_to_track())))
-			continue;
-		if (f.has_track() && !f.has_up_to_track() && (track != f.track()))
-			continue;
-		if (f.has_side() && (f.side() != side))
-			continue;
-
-		trackdata.MergeFrom(f);
-	}
-}
-

@@ -4,6 +4,8 @@
 #define GREASEWEAZLE_VID 0x1209
 #define GREASEWEAZLE_PID 0x4d69
 
+#define GREASEWEAZLE_ID ((GREASEWEAZLE_VID<<16) | GREASEWEAZLE_PID)
+
 #define EP_OUT 0x02
 #define EP_IN 0x83
 
@@ -73,9 +75,10 @@ extern Bytes stripPartialRotation(const Bytes& fldata);
 /*
  * CMD_SET_BUS CODES
  */
-#define BUS_NONE            0
-#define BUS_IBMPC           1
-#define BUS_SHUGART         2
+#define BUS_NONE              0
+#define BUS_IBMPC             1
+#define BUS_SHUGART           2
+#define BUS_APPLE2            3
 
 
 /*

@@ -6,8 +6,8 @@
 
 ConfigProto config = []() {
 	ConfigProto config;
-	config.mutable_flux_source()->mutable_drive()->set_drive(0);
-	config.mutable_flux_sink()->mutable_drive()->set_drive(0);
+	config.mutable_drive()->set_drive(0);
+	config.mutable_drive()->set_drive(0);
 	return config;
 }();
 
@@ -141,11 +141,13 @@ void setProtoFieldFromString(ProtoField& protoField, const std::string& value)
 			static const std::map<std::string, bool> boolvalues = {
 				{ "false", false },
 				{ "f",     false },
+				{ "no",    false },
 				{ "n",     false },
 				{ "0",     false },
 				{ "true",  true },
 				{ "t",     true },
-				{ "n",     true },
+				{ "yes",   true },
+				{ "y",     true },
 				{ "1",     true },
 			};
 

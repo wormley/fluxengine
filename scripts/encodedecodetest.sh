@@ -1,24 +1,20 @@
 #!/bin/sh
 set -e
 
-if [ $(uname) != "Linux" ]; then
-	echo "Skipping test as not on Linux"
-	exit 0
-fi
-
-tmp=/tmp/$$
-srcfile=$tmp.src.img
-fluxfile=$tmp.flux
-destfile=$tmp.dest.img
 format=$1
+tmp=/tmp/$$-$format
+srcfile=$tmp.src.img
+fluxfile=$tmp.$2
+destfile=$tmp.dest.img
+shift
 shift
 
 trap "rm -f $srcfile $fluxfile $destfile" EXIT
 
-dd if=/dev/urandom of=$srcfile bs=1M count=2 2>&1
+dd if=/dev/urandom of=$srcfile bs=1048576 count=2 2>&1
 
-./fluxengine write $format -i $srcfile -d $fluxfile "$@"
-./fluxengine read $format -s $fluxfile -o $destfile "$@"
+./fluxengine write $format -i $srcfile -d $fluxfile --drive.rotational_period_ms=200 "$@"
+./fluxengine read $format -s $fluxfile -o $destfile --drive.rotational_period_ms=200 "$@"
 if [ ! -s $destfile ]; then
 	echo "Zero length output file!" >&2
 	exit 1

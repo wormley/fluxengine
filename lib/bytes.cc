@@ -160,6 +160,24 @@ Bytes Bytes::slice(unsigned start) const
 	return slice(start, len);
 }
 
+std::vector<Bytes> Bytes::split(uint8_t separator) const
+{
+	std::vector<Bytes> vector;
+
+	int lastEnd = 0;
+	for (int i=0; i<size(); i++)
+	{
+		if ((*this)[i] == separator)
+		{
+			vector.push_back(this->slice(lastEnd, i-lastEnd));
+			lastEnd = i + 1;
+		}
+	}
+	vector.push_back(this->slice(lastEnd));
+
+	return vector;
+}
+
 std::vector<bool> Bytes::toBits() const
 {
 	std::vector<bool> bits;
@@ -277,6 +295,16 @@ ByteReader Bytes::reader() const
 ByteWriter Bytes::writer()
 {
     return ByteWriter(*this);
+}
+
+uint64_t ByteReader::read_be48()
+{
+	return ((uint64_t)read_be16() << 32) | read_be32();
+}
+
+uint64_t ByteReader::read_be64()
+{
+	return ((uint64_t)read_be32() << 32) | read_be32();
 }
 
 ByteWriter& ByteWriter::operator +=(std::istream& stream)

@@ -4,8 +4,9 @@
 #include "imagewriter/imagewriter.h"
 #include "image.h"
 #include "lib/config.pb.h"
-#include "imagereader/imagereaderimpl.h"
+#include "imginputoutpututils.h"
 #include "fmt/format.h"
+#include "logger.h"
 #include <algorithm>
 #include <iostream>
 #include <fstream>
@@ -28,40 +29,40 @@ public:
 		if (!outputFile.is_open())
 			Error() << "cannot open output file";
 
-		for (int track = 0; track < tracks; track++)
+		for (const auto& p : getTrackOrdering(_config.img(), tracks, sides))
 		{
-			for (int side = 0; side < sides; side++)
+			int track = p.first;
+			int side = p.second;
+
+			ImgInputOutputProto::TrackdataProto trackdata;
+			getTrackFormat(_config.img(), trackdata, track, side);
+
+			auto sectors = getSectors(trackdata, geometry.numSectors);
+			if (sectors.empty())
 			{
-				ImgInputOutputProto::TrackdataProto trackdata;
-				getTrackFormat(_config.img(), trackdata, track, side);
+				int maxSector = geometry.firstSector + geometry.numSectors - 1;
+				for (int i=geometry.firstSector; i<=maxSector; i++)
+					sectors.push_back(i);
+			}
 
-				auto sectors = getSectors(trackdata);
-				if (sectors.empty())
-				{
-					int maxSector = geometry.firstSector + geometry.numSectors - 1;
-					for (int i=geometry.firstSector; i<=maxSector; i++)
-						sectors.push_back(i);
-				}
+			int sectorSize = trackdata.has_sector_size() ? trackdata.sector_size() : geometry.sectorSize;
 
-				int sectorSize = trackdata.has_sector_size() ? trackdata.sector_size() : geometry.sectorSize;
-
-				for (int sectorId : sectors)
-				{
-					const auto& sector = image.get(track, side, sectorId);
-					if (sector)
-						sector->data.slice(0, sectorSize).writeTo(outputFile);
-					else
-						outputFile.seekp(sectorSize, std::ios::cur);
-				}
+			for (int sectorId : sectors)
+			{
+				const auto& sector = image.get(track, side, sectorId);
+				if (sector)
+					sector->data.slice(0, sectorSize).writeTo(outputFile);
+				else
+					outputFile.seekp(sectorSize, std::ios::cur);
 			}
 		}
 
-		std::cout << fmt::format("IMG: wrote {} tracks, {} sides, {} kB total\n",
+		Logger() << fmt::format("IMG: wrote {} tracks, {} sides, {} kB total",
 						tracks, sides,
 						outputFile.tellp() / 1024);
 	}
 
-	std::vector<unsigned> getSectors(const ImgInputOutputProto::TrackdataProto& trackdata)
+	std::vector<unsigned> getSectors(const ImgInputOutputProto::TrackdataProto& trackdata, unsigned numSectors)
 	{
 		std::vector<unsigned> sectors;
 		switch (trackdata.sectors_oneof_case())
@@ -76,10 +77,15 @@ public:
 			case ImgInputOutputProto::TrackdataProto::SectorsOneofCase::kSectorRange:
 			{
 				int sectorId = trackdata.sector_range().start_sector();
-				for (int i=0; i<trackdata.sector_range().sector_count(); i++)
+				if (trackdata.sector_range().has_sector_count())
+					numSectors = trackdata.sector_range().sector_count();
+				for (int i=0; i<numSectors; i++)
 					sectors.push_back(sectorId + i);
 				break;
 			}
+
+			default:
+				break;
 		}
 		return sectors;
 	}

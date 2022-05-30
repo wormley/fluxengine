@@ -29,6 +29,9 @@ std::unique_ptr<ImageWriter> ImageWriter::create(const ImageWriterProto& config)
 		case ImageWriterProto::kNsi:
 			return ImageWriter::createNsiImageWriter(config);
 
+		case ImageWriterProto::kRaw:
+			return ImageWriter::createRawImageWriter(config);
+
 		default:
 			Error() << "bad output image config";
 			return std::unique_ptr<ImageWriter>();
@@ -37,23 +40,27 @@ std::unique_ptr<ImageWriter> ImageWriter::create(const ImageWriterProto& config)
 
 void ImageWriter::updateConfigForFilename(ImageWriterProto* proto, const std::string& filename)
 {
-	static const std::map<std::string, std::function<void(void)>> formats =
+	static const std::map<std::string, std::function<void(ImageWriterProto*)>> formats =
 	{
-		{".adf",      [&]() { proto->mutable_img(); }},
-		{".d64",      [&]() { proto->mutable_d64(); }},
-		{".d81",      [&]() { proto->mutable_img(); }},
-		{".diskcopy", [&]() { proto->mutable_diskcopy(); }},
-		{".img",      [&]() { proto->mutable_img(); }},
-		{".ldbs",     [&]() { proto->mutable_ldbs(); }},
-		{".st",       [&]() { proto->mutable_img(); }},
-		{".nsi",      [&]() { proto->mutable_nsi(); }},
+		{".adf",      [](auto* proto) { proto->mutable_img(); }},
+		{".d64",      [](auto* proto) { proto->mutable_d64(); }},
+		{".d81",      [](auto* proto) { proto->mutable_img(); }},
+		{".diskcopy", [](auto* proto) { proto->mutable_diskcopy(); }},
+		{".dsk",      [](auto* proto) { proto->mutable_img(); }},
+		{".img",      [](auto* proto) { proto->mutable_img(); }},
+		{".ldbs",     [](auto* proto) { proto->mutable_ldbs(); }},
+		{".nsi",      [](auto* proto) { proto->mutable_nsi(); }},
+		{".raw",      [](auto* proto) { proto->mutable_raw(); }},
+		{".st",       [](auto* proto) { proto->mutable_img(); }},
+		{".vgi",      [](auto* proto) { proto->mutable_img(); }},
+		{".xdf",      [](auto* proto) { proto->mutable_img(); }},
 	};
 
 	for (const auto& it : formats)
 	{
 		if (endsWith(filename, it.first))
 		{
-			it.second();
+			it.second(proto);
 			proto->set_filename(filename);
 			return;
 		}
@@ -90,7 +97,7 @@ void ImageWriter::writeCsv(const Image& image, const std::string& filename)
 	for (const auto& sector : image)
 	{
 		f << fmt::format("{},{},{},{},{},{},{},{},{},{},{},{},{}\n",
-			sector->physicalCylinder,
+			sector->physicalTrack,
 			sector->physicalHead,
 			sector->logicalTrack,
 			sector->logicalSide,
@@ -100,7 +107,7 @@ void ImageWriter::writeCsv(const Image& image, const std::string& filename)
 			sector->headerEndTime,
 			sector->dataStartTime,
 			sector->dataEndTime,
-			sector->position.bytes,
+			sector->position,
 			sector->data.size(),
 			Sector::statusToString(sector->status)
 		);
